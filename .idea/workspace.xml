@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="Init Project">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doku/definitions/Role Definition.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/definitions/Role Definition.md" afterDir="false" />
+    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doku/definitions/Definition of Doing.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/definitions/Definition of Doing.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doku/definitions/Definition of Fun.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/definitions/Definition of Fun.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doku/lastenheft/Lastenheft.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/lastenheft/Lastenheft.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,9 @@
       <workItem from="1667764001760" duration="69000" />
       <workItem from="1667766409548" duration="6000" />
       <workItem from="1667766431484" duration="9000" />
-      <workItem from="1667808362694" duration="649000" />
+      <workItem from="1667808362694" duration="1138000" />
+      <workItem from="1667983694908" duration="1964000" />
+      <workItem from="1668588883147" duration="3803000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -89,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667764029590</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[ADD] Rollendefinition">
+      <created>1667809040662</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1667809040662</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init Project" />
+    <MESSAGE value="[ADD] Rollendefinition" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Rollendefinition" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
