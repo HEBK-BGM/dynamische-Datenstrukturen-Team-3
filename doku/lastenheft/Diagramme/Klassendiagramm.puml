@@ -67,4 +67,30 @@ class de.hebk.model.stack.Stack {
 class de.hebk.Main {
 + {static} void main(String[])
 }
+
+class de.hebk.menue.GUI {
+
+}
+
+class de.hebk.menue.Menue {
+
+}
+
+class de.hebk.game.Joker{
+
+}
+
+class de.hebk.menue.User{
+
+}
+'speichern von bestenliste
+
+class de.hebk.menu.Questions{
+
+}
+
+class de.hebk.CSVreader{
+
+}
+
 @enduml
