@@ -67,4 +67,29 @@ class de.hebk.model.stack.Stack {
 class de.hebk.Main {
 + {static} void main(String[])
 }
+
+class de.hebk.menu.GUI{
+
+}
+
+class de.hebk.game.Joker{
+
+}
+
+class de.hebk.game.Questions{
+
+}
+
+class de.hebk.menu.User{
+
+}
+
+class de.hebk.CSVreader{
+
+}
+
+class de.hebk.menu.Menu{
+
+}
+
 @enduml
