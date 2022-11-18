@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="Init Project">
+      <change afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Klassendiagramm2.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequensdiagramm2.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doku/definitions/Role Definition.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/definitions/Role Definition.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2HBYoget7g6hULhRWUFk73OXd0C" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -35,10 +44,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/lukas.tenbro/Documents/Informatik/Repository/Lukas_dynamische-Datenstrukturen-Team-3/doku/lastenheft/Diagramme",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lukas.tenbro\Documents\Informatik\Repository\Lukas_dynamische-Datenstrukturen-Team-3\doku\lastenheft\Diagramme" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -74,6 +93,7 @@
       <workItem from="1667766409548" duration="6000" />
       <workItem from="1667766431484" duration="9000" />
       <workItem from="1667808362694" duration="649000" />
+      <workItem from="1668590650530" duration="3691000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -105,7 +125,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Project" />

@@ -1,0 +1,45 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+Class Main
+Class GUI
+Class Joker
+
+Class node{
+public node (String:pString)
+}
+
+Class Stack{
+Stack()
+boolean isEmpty()
+void push(Object : pObject)
+void pop()
+Object top()
+}
+
+Class Queue{
+boolean isEmpty()
+void enqueue(Object : pObject)
+void dequeue()
+Object front()
+}
+
+Class List{
+boolean isEmpty()
+boolean hasAccess()
+void next()
+void toFirst()
+void toLast()
+Object getObject()
+void setObject(Object : pObject)
+void append(Object : pObject)
+void insert(Object : pObject)
+void concat(List : pList)
+void remove()
+
+}
+
+
+
+
+@enduml
