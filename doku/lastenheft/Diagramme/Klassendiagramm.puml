@@ -85,7 +85,7 @@ class de.hebk.menue.User{
 }
 'speichern von bestenliste
 
-class de.hebk.menu.Questions{
+class de.hebk.game.Questions{
 
 }
 
