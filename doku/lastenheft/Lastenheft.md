@@ -1,6 +1,6 @@
 # Lastenheft Team 3
 
-**Entwicklung einer Hello-world Anwendung in Java**
+**Entwicklung eines Wer wird Millionär ähnlichen Spieles in Java mit GUI**
 
 | Stand        | 16.11.2022                                                  |
 |--------------|-------------------------------------------------------------|
@@ -56,10 +56,10 @@ das Spielerlebnis aufgewertet werden. Die Implementation soll nach den Vorgaben 
 
 Aus dem Ziel, den Softwareentwicklungsprozess zu veranschaulichen und andererseits das Spiel "Wer wird Millionär?" zu entwickeln, lassen sich folgende Beteiligte den folgenden erfassten Anforderungen zuordnen:
 
-| **Anforderungsbeitragende** | **Anforderung**                                                                                                                                                                                          |
-|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lernende                    | Anhand des Systems soll der Softwareentwicklungsprozess praktisch veranschaulicht und lösungsorientiertes Arbeiten gefördert werden.                                                                                                                 |
-| Nutzer                      | Das System soll das Spiel "Wer wird Millionär?" darstellen. Das Spiel soll in Form einer GUI angezeigt werden.                                  |
+| **Anforderungsbeitragende** | **Anforderung**                                                                                                                                                                                              |
+|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Lernende                    | Anhand des Systems soll der Softwareentwicklungsprozess praktisch veranschaulicht und lösungsorientiertes Arbeiten gefördert werden.                                                                         |
+| Nutzer                      | Das System soll das Spiel "Wer wird Millionär?" darstellen. Das Spiel soll in Form einer GUI angezeigt werden.                                                                                               |
 | Lehrkräfte                  | Die Analyse des Systems soll objektorientiert erfolgen. Für Modellierung und Dokumentation soll PlantUML genutzt werden. Die Implementierung soll in Java erfolgen, der Code soll gewisse Vorgaben erfüllen. |
 
 ## 3 Anforderungen
@@ -76,10 +76,17 @@ Anforderungen ist ratsam*
 
 Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am Betriebssystem angemeldete Nutzer führt das Programm in der Konsole aus. Der Aufruf erfolgt mittels Java-Interpreter.
 
-| Kürzel | Funktionsname                  | Funktionsbeschreibung                   |
-|--------|--------------------------------|-----------------------------------------|
-| F1     | Anzeige des Hello-world-Textes | Der Text "hello world" wird ausgegeben. |
-| F2     | Anzeigen des Hilfe-Textes      | Ein Hilfetext wird ausgegeben.          |
+| Kürzel | Funktionsname               | Funktionsbeschreibung                                                                                                                                                 |
+|--------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| F1     | Startbildschirm             | Startbutton für Singleplayer und ggf. ein Multiplayer                                                                                                                 |
+| F2     | Anzeigen des Hilfe-Textes   | Es soll jeder Zeit unten links ein Hilfe Knopf da sein hinter dem eine Spiel erklärung zu finden ist                                                                  |
+| F3     | Hilfe Kopf                  | Hinter dem eine Spiel erklärung zu finden sein im Style einer klassischen Spielanleitung                                                                              |
+| F4     | Seite mit dem Fragen layout | Joker Knopf oben links; erspieltes Geld oben rechts; Frage zentral in der Mitte dadrunter 2x2 die Fragen; <br/>unten links ein zurück ins Menü button mit Bestätigung |
+| F5     | Multiplayer                 | Weiteres Startmenü und Fragenmenü                                                                                                                                     |
+| F6     | Spielerauswahl              | Auswahl der Spieler Anzahl 1-4                                                                                                                                        |
+| F7     | Vergabe von Namen           | Die Spieler tragen Ihren Namen in ein Feld ein mit dem Sie wieder angesprochen werden wollen                                                                          |
+| F8     | Joker                       | Es soll ein Publikums- Telefon- 50:50-joker                                                                                                                           |
+| F9     | Cheat                       | [ToDo] muss noch konzeptioniert werden und anschließen hier eingefügt                                                                                                 |
 
 ### 3.2 Nicht-funktionale Anforderungen
 
