@@ -1,6 +1,6 @@
 @startuml
 'https://plantuml.com/class-diagram
-
+/'
 abstract class AbstractList
 abstract AbstractCollection
 interface List
@@ -23,5 +23,48 @@ DAYS
 HOURS
 MINUTES
 }
+'/
 
+class de.hebk.model.list.List {
+- Node<T> first
+- Node<T> aktuelleNode
++ boolean isEmpty()
++ boolean hasAccess()
++ void next()
++ void toFirst()
++ void toLast()
++ T getObject()
++ void setObject()
++ void append(T)
++ void insert(T)
++ void concat(List<T>)
++ void remove()
+}
+
+class de.hebk.model.node.Node {
+- T context
+- Node<T> next
++ T getContext()
++ void setContext(T)
++ Node<T> getNext()
++ void setNext(Node<T>)
+}
+
+class de.hebk.model.queue.Queue {
+- Node<T> first
++ boolean isEmpty()
++ void enqueue(T)
++ void dequeue()
++ T front()
+}
+class de.hebk.model.stack.Stack {
+- Node<T> first
++ boolean isEmpty()
++ void push(T)
++ void pop()
++ T top()
+}
+class de.hebk.Main {
++ {static} void main(String[])
+}
 @enduml

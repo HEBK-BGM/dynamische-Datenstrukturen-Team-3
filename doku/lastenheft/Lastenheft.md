@@ -1,8 +1,8 @@
 # Lastenheft Team 3
 
-**Entwicklung eines Wer wird Millionär ähnlichen Spieles in Java mit GUI**
+**Entwicklung einer Hello-world Anwendung in Java**
 
-| Stand        | 16.11.2022                                                  |
+| Stand        | 06.11.2022                                                  |
 |--------------|-------------------------------------------------------------|
 | Auftraggeber | Hermann-Emanuel-Berufskolleg Informatik LK Abschlussprojekt |
 
@@ -17,19 +17,16 @@
 *Eine kurze Einstimmung zum Projekthintergrund*
 
 Im Informatik Leistungskurs entwickeln die Lernenden ein Softwareprojekt. Im Rahmen des
-Softwareentwicklungsprozesses sind typische Dokumente wie das Lastenheft zu erstellen. Mit der Entwicklung der Spiel-Anwendung von "Wer wird Millionär?" soll der
+Softwareentwicklungsprozesses sind typische Dokumente wie das Pflichtenheft zu erstellen. Mit der Entwicklung einer Hello-world-Anwendung soll der
 Softwareentwicklungsprozess praktisch mit den entsprechenden Dokumenten aufgezeigt werden.
 
 ## 2 Soll-Konzept
 
-### 2.1 Anwendungsbereiche
+### 2.1 Anwendungsbreiche
 *Beschreibung der vorgesehenen Anwendungsfälle des zu schaffenden Systems.*
 
 Das System hat nur beispielhaften Charakter. Somit ist eine klassische Hello-world-Anwendung ausreichend.
 Eventuell soll noch optional ein Hilfetext ausgegeben werd
-
-Das System soll mithilfe von dynamischen Datenstrukturen (Stack, Queue, Liste) das Spiel "Wer wird Millionär?" darstellen.
-Außerdem soll eine GUI implementiert werden. Drei Joker und eine Bestenliste sind ebenfalls zu implementieren.
 
 ### 2.2 Systemidee
 *Welche Idee wird mit dem System umgesetzt?*
@@ -38,29 +35,22 @@ Eine einfache und übersichtliche Java-Anwendung, welche in der Konsole zu start
 Text aus. Wird die Anwendung mit einem entsprechenden Parameter gestartet, wird ein Hilfetext
 ausgegeben
 
-Eine kompakte Java-Anwendung, welche in der Konsole zu starten ist, soll das Spiel "Wer wird Millionär?" darstellen. 
-Bei Ausführung wird eine GUI gestartet, in welcher man das Spiel spielen kann.
-
 ### 2.3 Ziele
 *Welche konkreten Ziele sollen erreicht werden? (Aufteilung der Idee in Teilziele)*
 
 Nicht mit dem System, sondern anhand des Systems soll der Softwareentwicklungsprozess veranschaulicht
 werden
 
-Anhand des Systems wird der Softwareentwicklungsprozess weiter ausgebildet. Konkret soll das Spiel im Einzel- und Mehrspielermodus
-spielbar sein. Auch Cheats und eine GUI sollen enthalten sein. Mithilfe von 3 Jokern und einer Bestenliste soll
-das Spielerlebnis aufgewertet werden. Die Implementation soll nach den Vorgaben des Lastenhefts durchgeführt werden.
-
 ### 2.4 Zielgruppe
 *Benennung der Anforderungsbeitragenden mit Bezug zu deren Anforderungen*
 
-Aus dem Ziel, den Softwareentwicklungsprozess zu veranschaulichen und andererseits das Spiel "Wer wird Millionär?" zu entwickeln, lassen sich folgende Beteiligte den folgenden erfassten Anforderungen zuordnen:
+us dem Ziel, den Softwareentwicklungsprozess zu veranschaulichen und andererseits ein einfaches Hello-world-Programm zu entwickeln, lassen sich folgende Beteiligte den grob erfassten Anforderungen zuordnen:
 
-| **Anforderungsbeitragende** | **Anforderung**                                                                                                                                                                                              |
-|-----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Lernende                    | Anhand des Systems soll der Softwareentwicklungsprozess praktisch veranschaulicht und lösungsorientiertes Arbeiten gefördert werden.                                                                         |
-| Nutzer                      | Das System soll das Spiel "Wer wird Millionär?" darstellen. Das Spiel soll in Form einer GUI angezeigt werden.                                                                                               |
-| Lehrkräfte                  | Die Analyse des Systems soll objektorientiert erfolgen. Für Modellierung und Dokumentation soll PlantUML genutzt werden. Die Implementierung soll in Java erfolgen, der Code soll gewisse Vorgaben erfüllen. |
+| **Anforderungsbeitragende** | **Anforderung**                                                                                                                                                                                          |
+|-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Lernende                    | Anhand des Systems soll der Softwareentwicklungsprozess praktisch veranschaulicht werde                                                                                                                  |
+| Nutzer                      | Das System soll die Zeichenkette „hello world“ ausgeben. Das System soll an das Betriebssystem einen Exit-Code zurückgeben. Das System kann  einen Hilfetext ausgeben                                    |
+| Lehrkräfte                  | Die Analyse des Systems soll objektorientiert erfolgen. Für Modellierung und Dokumentation soll UML2 genutzt werden. Die Implementierung soll in Java erfolgen, der Code soll gewisse Vorgaben erfüllen. |
 
 ## 3 Anforderungen
 
@@ -76,17 +66,10 @@ Anforderungen ist ratsam*
 
 Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am Betriebssystem angemeldete Nutzer führt das Programm in der Konsole aus. Der Aufruf erfolgt mittels Java-Interpreter.
 
-| Kürzel | Funktionsname               | Funktionsbeschreibung                                                                                                                                                 |
-|--------|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| F1     | Startbildschirm             | Startbutton für Singleplayer und ggf. ein Multiplayer                                                                                                                 |
-| F2     | Anzeigen des Hilfe-Textes   | Es soll jeder Zeit unten links ein Hilfe Knopf da sein hinter dem eine Spiel erklärung zu finden ist                                                                  |
-| F3     | Hilfe Kopf                  | Hinter dem eine Spiel erklärung zu finden sein im Style einer klassischen Spielanleitung                                                                              |
-| F4     | Seite mit dem Fragen layout | Joker Knopf oben links; erspieltes Geld oben rechts; Frage zentral in der Mitte dadrunter 2x2 die Fragen; <br/>unten links ein zurück ins Menü button mit Bestätigung |
-| F5     | Multiplayer                 | Weiteres Startmenü und Fragenmenü                                                                                                                                     |
-| F6     | Spielerauswahl              | Auswahl der Spieler Anzahl 1-4                                                                                                                                        |
-| F7     | Vergabe von Namen           | Die Spieler tragen Ihren Namen in ein Feld ein mit dem Sie wieder angesprochen werden wollen                                                                          |
-| F8     | Joker                       | Es soll ein Publikums- Telefon- 50:50-joker                                                                                                                           |
-| F9     | Cheat                       | [ToDo] muss noch konzeptioniert werden und anschließen hier eingefügt                                                                                                 |
+| Kürzel | Funktionsname                  | Funktionsbeschreibung                   |
+|--------|--------------------------------|-----------------------------------------|
+| F1     | Anzeige des Hello-world-Textes | Der Text "hello world" wird ausgegeben. |
+| F2     | Anzeigen des Hilfe-Textes      | Ein Hilfetext wird ausgegeben.          |
 
 ### 3.2 Nicht-funktionale Anforderungen
 
