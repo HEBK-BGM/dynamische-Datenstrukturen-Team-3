@@ -2,7 +2,7 @@
 
 **Entwicklung eines Wer wird Millionär ähnlichen Spieles in Java mit GUI**
 
-| Stand        | 16.11.2022                                                  |
+| Stand        | 23.11.2022                                                  |
 |--------------|-------------------------------------------------------------|
 | Auftraggeber | Hermann-Emanuel-Berufskolleg Informatik LK Abschlussprojekt |
 
