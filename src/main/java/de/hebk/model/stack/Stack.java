@@ -15,7 +15,9 @@ public class Stack<T> {
      * Objekte enthält, sonst liefert sie den Wert false.
      */
     public boolean isEmpty(){
-        //TODO fill
+        if(first != null){
+            return false;
+        }
         return true;
     }
 
@@ -24,7 +26,17 @@ public class Stack<T> {
      * pObject gleich null ist, bleibt der Stapel unverändert
      */
     public void push(T pObjekt){
-        //TODO fill
+        if(pObjekt != null) {
+            Node<T> tmp = first;
+
+            while (tmp != null) {
+                tmp = tmp.getNext();
+            }
+
+            if (tmp == null) {
+                tmp.setContext(pObjekt);
+            }
+        }
     }
 
     /**
@@ -32,7 +44,19 @@ public class Stack<T> {
      * Falls der Stapel leer ist, bleibt er unverändert.
      */
     public void pop(){
-        //TODO fill
+        if(first != null){
+            Node<T> tmp = first.getNext();
+            Node<T> tmp2 = first;
+
+            while (tmp != null) {
+                tmp = tmp.getNext();
+                tmp2 = tmp2.getNext();
+            }
+
+            if (tmp == null && tmp2 != null) {
+                tmp2 = null;
+            }
+        }
     }
 
     /**
@@ -40,7 +64,19 @@ public class Stack<T> {
      * unverändert. Falls der Stapel leer ist, wird null zurückgegeben.
      */
     public T top(){
-        //TODO fill
-        return this.first.getContext();
+        if(first != null){
+            Node<T> tmp = first.getNext();
+            Node<T> tmp2 = first;
+
+            while (tmp != null) {
+                tmp = tmp.getNext();
+                tmp2 = tmp2.getNext();
+            }
+
+            if (tmp == null && tmp2 != null) {
+                return tmp2.getContext();
+            }
+        }
+        return null;
     }
 }
