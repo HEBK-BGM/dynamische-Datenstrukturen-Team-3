@@ -15,6 +15,7 @@ public class Stack<T> {
      * Objekte enthält, sonst liefert sie den Wert false.
      */
     public boolean isEmpty(){
+        // ToDo siehe queue
         if(first != null){
             return false;
         }
@@ -26,6 +27,13 @@ public class Stack<T> {
      * pObject gleich null ist, bleibt der Stapel unverändert
      */
     public void push(T pObjekt){
+        // ToDo das hier ist eher eine Methode für eine Schlange bei dir.. geht relativ einfach ;) ->
+        /**
+         *  Node<T> tmp = first
+         *  first = new Node<T>(pObjekt)
+         *  first.setNext(tmp)
+         *
+         */
         if(pObjekt != null) {
             Node<T> tmp = first;
 
@@ -44,6 +52,7 @@ public class Stack<T> {
      * Falls der Stapel leer ist, bleibt er unverändert.
      */
     public void pop(){
+        // ToDo du denkst zu kompliziert.. if (first != null) {first = first.netNext()} und fertig ;)
         if(first != null){
             Node<T> tmp = first.getNext();
             Node<T> tmp2 = first;
@@ -64,6 +73,7 @@ public class Stack<T> {
      * unverändert. Falls der Stapel leer ist, wird null zurückgegeben.
      */
     public T top(){
+        // ToDo wieder viel zu kompliziert ich denke, das hier ist copy paste von aneren Methoden.. return first.getContext()
         if(first != null){
             Node<T> tmp = first.getNext();
             Node<T> tmp2 = first;
