@@ -74,6 +74,8 @@ public class List<T> {
      * aktuelles Objekt. Ist die Liste leer, geschieht nichts.
      */
     public void toLast(){
+        //ToDo hier knallt es first == null ist
+        //  Insgesamt kann man das deutlich einfacher implementieren. Vll fällt dir ja ein einfacher Weg ein ;)
         Node tmp = first.getNext();
         Node tmp2 = first;
 
@@ -119,7 +121,7 @@ public class List<T> {
      * Falls pObject gleich null ist, bleibt die Liste unverändert.
      */
     public void append(T pContext){
-
+        //ToDo es fehlt der Fall first == null. Dann uss first auf das neue die neue Node gesetzt werden
         if(pContext != null) {
             Node<T> tmp = first;
 
@@ -160,6 +162,7 @@ public class List<T> {
                 tmp = tmp.getNext();
             }
 
+            // ToDo unnötig. Wenn du an der 1. Liste abeim letzten Element bist, dann kannst du einfach tmp.setNext(pList.first) anwenden bzw evtl. muss da noch eine Methode vor ;)
             Node<T> tmp2 = pList.first;
             while (tmp2 != null) {
                 tmp.setContext(tmp2.getContext());
@@ -178,10 +181,12 @@ public class List<T> {
      * unverändert.
      */
     public void remove(){
+        //ToDo es fehlt der Fall, wenn das first element gelöscht wird.
         if(aktuelleNode != null || first != null){
             if(aktuelleNode.getNext() != null) {
                 Node<T> tmp = aktuelleNode.getNext();
                 aktuelleNode = null;
+                //ToDo du musst von dem Element davor auf das tmp zeigen um das Element aus der Liste zu löschen. So machst du die Liste kaputt
                 aktuelleNode = tmp;
             }
             else{
