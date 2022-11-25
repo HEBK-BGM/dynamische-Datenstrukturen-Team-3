@@ -16,11 +16,7 @@ public class Queue<T> {
      * Objekte enthält, sonst liefert sie den Wert false.
      */
     public boolean isEmpty(){
-        //ToDO viel einfacher mit "return first == null;"
-        if(first != null){
-            return false;
-        }
-        return true;
+        return first == null;
     }
 
     /**
@@ -30,17 +26,26 @@ public class Queue<T> {
     public void enqueue(T pObject){
         if(pObject != null) {
             Node<T> tmp = first;
-            // ToDo es fehlt der Fall first == null, denn dann ist einfach first = new Node<T>(pObject)
+            // ToDo Wienands
 
-            // ToDo Um ein Element einzängen musst du while (tmp.getNext() != null) laufen um dann tmp.setnext(new Node<T>(pObject) zu setzen
-            while (tmp != null) {
-                tmp = tmp.getNext();
+            if(pObject != null) {
+                if (first == null) {
+                    first = new Node<T>();
+                    first.setContext(pObject);
+                }
+
+                else {
+                    // ToDo Wienands
+                    while (tmp.getNext() != null) {
+                        tmp = tmp.getNext();
+                    }
+                    // ToDO Wienands
+                    Node tmp2 = new Node<T>();
+                    tmp2.setContext(pObject);
+                    tmp.setNext(tmp2);
+                }
             }
 
-            if (tmp == null) {
-                // ToDO siehe Kommentar oben. Wenn tmp.next null ist, dann kannst du davon nicht mit setContext den Inhalt setzen (null pointer exception)
-                tmp.setContext(pObject);
-            }
         }
     }
 
@@ -50,12 +55,9 @@ public class Queue<T> {
      * Schlange leer ist, wird sie nicht verändert.
      */
     public void dequeue(){
-        Node<T> tmp = first;
 
-        if (tmp != null) {
-            //ToDo was soll tmp = null machen?
-            tmp = null;
-
+        if (first != null) {
+            // TODO Wienands
             first = first.getNext();
         }
     }
