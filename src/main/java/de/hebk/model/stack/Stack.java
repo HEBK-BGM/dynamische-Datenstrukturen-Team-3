@@ -45,8 +45,8 @@ public class Stack<T> {
      * unverändert. Falls der Stapel leer ist, wird null zurückgegeben.
      */
     public T top() {
-        // ToDo wenn first == null dann gibts null zurück oder ;)
-        if(first != null) {
+        // ToDo Wienands 2
+        if(first == null) {
             return null;
         } else {
             return first.getContext();
