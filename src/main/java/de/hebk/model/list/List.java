@@ -104,9 +104,9 @@ public class List<T> {
      * Falls es ein aktuelles Objekt gibt und pObject ungleich null ist,
      * wird das aktuelle Objekt durch pObject ersetzt.
      */
-    public void setObject(Node pObjekt){
-        if(aktuelleNode != pObjekt && pObjekt != null){
-            aktuelleNode = pObjekt;
+    public void setObject(T pObjekt){
+        if(aktuelleNode.getContext() != pObjekt && pObjekt != null){
+            aktuelleNode.setContext(pObjekt);
         }
     }
 
@@ -120,15 +120,15 @@ public class List<T> {
     public void append(T pContext){
         //ToDo Wienands
         if(first == null){
+            // ToDo du musst first auch initialisieren ;) ala  first = new Node<T>();
             first.setContext(pContext);
         }
+        //ToDo Warum überprüfst du, ob pContext != null ist nicht bevor du die first node setzt? Dein Fall hier sollte else if (first != null) sein
         else if(pContext != null) {
             Node<T> tmp = first;
-
             while (tmp != null) {
                 tmp = tmp.getNext();
             }
-
             if (tmp == null) {
                 tmp.setContext(pContext);
             }
@@ -145,7 +145,6 @@ public class List<T> {
      * ist, bleibt die Liste unverändert.
      */
     public void insert(T pContext){
-
         //TODO Fill
     }
     /**
@@ -154,7 +153,11 @@ public class List<T> {
      * bleibt die Liste unverändert
      */
     public void concat(List<T> pList){
-
+        //ToDO Tipp ;) nutzen wir doch unsere toLast() Methode es fehlt aber die Überprüfung, ob first evtl null ist
+        // if (first == null && pList.first == null) {first = pList.first}else{
+        //      this.toLast();
+        //      aktuelleNode.setNext(pList.first)
+        // }
         if(pList != null) {
             Node<T> tmp = first;
 
@@ -176,19 +179,20 @@ public class List<T> {
      * unverändert.
      */
     public void remove(){
-        //ToDo Winands
         if(aktuelleNode == first){
             first = first.getNext();
         }
+        // ToDo warum hier ein oder (||) und kein und (&&) ?
         else if(aktuelleNode != null || first != null){
             if(aktuelleNode.getNext() != null) {
                 Node<T> tmp = first;
                 while(tmp.getNext() != aktuelleNode){
                     tmp = tmp.getNext();
                 }
-
+                // ToDo Du musst das anders herum machen so setzt du (Pfeil zeigt hier welche Nodes aufeinander folgen)
+                //  1. tmp -> aktuellenode.next()
+                //  2. aktuelleNode -> aktuelleNode.next()   (da du den Nachfolger von tmp ja vorher auf den Nachfolger von der aktuellenNode gesetzt hast)
                 tmp.setNext(aktuelleNode.getNext());
-                //ToDo Wienands
                 aktuelleNode = tmp.getNext();
             }
             else{

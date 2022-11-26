@@ -15,7 +15,6 @@ public class Stack<T> {
      * Objekte enthält, sonst liefert sie den Wert false.
      */
     public boolean isEmpty(){
-        // ToDo Wienands
         return first == null;
     }
 
@@ -24,10 +23,8 @@ public class Stack<T> {
      * pObject gleich null ist, bleibt der Stapel unverändert
      */
     public void push(T pObjekt){
-        // ToDo Wienands
-
         Node<T> tmp = first;
-        first = new Node<T>();  // ?
+        first = new Node<T>();
         first.setContext(pObjekt);
         first.setNext(tmp);
 
@@ -38,7 +35,6 @@ public class Stack<T> {
      * Falls der Stapel leer ist, bleibt er unverändert.
      */
     public void pop(){
-        // ToDo Wienands
         if(first != null){
             first = first.getNext();
         }
@@ -49,11 +45,10 @@ public class Stack<T> {
      * unverändert. Falls der Stapel leer ist, wird null zurückgegeben.
      */
     public T top() {
-        // ToDo Wienands
+        // ToDo wenn first == null dann gibts null zurück oder ;)
         if(first != null) {
             return null;
-        }
-        else {
+        } else {
             return first.getContext();
         }
     }

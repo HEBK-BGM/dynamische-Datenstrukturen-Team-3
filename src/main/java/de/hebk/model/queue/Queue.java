@@ -26,21 +26,16 @@ public class Queue<T> {
     public void enqueue(T pObject){
         if(pObject != null) {
             Node<T> tmp = first;
-            // ToDo Wienands
 
             if(pObject != null) {
                 if (first == null) {
                     first = new Node<T>();
                     first.setContext(pObject);
-                }
-
-                else {
-                    // ToDo Wienands
+                } else {
                     while (tmp.getNext() != null) {
                         tmp = tmp.getNext();
                     }
-                    // ToDO Wienands
-                    Node tmp2 = new Node<T>();
+                    Node<T> tmp2 = new Node<T>();
                     tmp2.setContext(pObject);
                     tmp.setNext(tmp2);
                 }
@@ -55,9 +50,7 @@ public class Queue<T> {
      * Schlange leer ist, wird sie nicht verändert.
      */
     public void dequeue(){
-
         if (first != null) {
-            // TODO Wienands
             first = first.getNext();
         }
     }
@@ -73,5 +66,4 @@ public class Queue<T> {
         }
         return null;
     }
-
 }
