@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="[ADD] List / Queue / Stack funktionen Überarbeitet">
+    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/model/stack/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/model/stack/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
       <workItem from="1667808362694" duration="1138000" />
       <workItem from="1667983694908" duration="1964000" />
       <workItem from="1668588883147" duration="3803000" />
-      <workItem from="1669273652447" duration="13239000" />
+      <workItem from="1669273652447" duration="18345000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -117,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669366876574</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet">
+      <created>1669468392688</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669468392689</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +145,8 @@
     <MESSAGE value="[ADD] Rollendefinition" />
     <MESSAGE value="[ADD] List / Queue / Stack funktionen gemacht" />
     <MESSAGE value="[ADD] List / Queue / Stack funktionen Überarbeitet" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] List / Queue / Stack funktionen Überarbeitet" />
+    <MESSAGE value="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

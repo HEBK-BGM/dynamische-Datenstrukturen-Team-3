@@ -146,6 +146,28 @@ public class List<T> {
      * ist, bleibt die Liste unverändert.
      */
     public void insert(T pContext){
+        Node<T> tmp = first;
+        if(pContext != null) {
+            if (aktuelleNode == null) {
+                if (first == null) {
+                    first.setContext(pContext);
+                }
+                while (tmp != null) {
+                    tmp = tmp.getNext();
+                }
+
+                tmp.setContext(pContext);
+
+            } else {
+                Node<T> insert = new Node<T>();
+                insert.setContext(pContext);
+                while (tmp.getNext() != aktuelleNode) {
+                    tmp = tmp.getNext();
+                }
+                tmp.setNext(insert);
+                insert.setNext(aktuelleNode);
+            }
+        }
         //TODO Fill
     }
     /**
