@@ -118,19 +118,20 @@ public class List<T> {
      * Falls pObject gleich null ist, bleibt die Liste unverändert.
      */
     public void append(T pContext){
-        //ToDo Wienands
         if(first == null){
-            // ToDo Wienands 2
             first = new Node<T>();
             first.setContext(pContext);
-        }
-        //ToDo Wienands 2
-        else if(first != null) {
+        }else{
             Node<T> tmp = first;
+            //ToDo du musst überprüfe, ob tmp.next != null ist ;)
             while (tmp != null) {
                 tmp = tmp.getNext();
             }
+            // ToDo die zweite if kannst du dir sparen. Du weißt nun ja, dass tmp.next == null ist
+            // ToDo also einfach tmp.setNext(new Node<T>()); und danach noch den pContext setzen ;)
             if (tmp == null) {
+                //ToDo da tmp == null ist knallt es hier ;) nullpointer
+                // D
                 tmp.setContext(pContext);
             }
         }
@@ -146,12 +147,17 @@ public class List<T> {
      * ist, bleibt die Liste unverändert.
      */
     public void insert(T pContext){
-        Node<T> tmp = first;
+        Node<T> tmp = first; //ToDo was wemm first == null?
         if(pContext != null) {
             if (aktuelleNode == null) {
                 if (first == null) {
+                    //ToDo falls first == null ist, dann musst du first erst initialisieren
                     first.setContext(pContext);
                 }
+                //ToDO Falls es kein aktuelles
+                //     * Objekt gibt und die Liste nicht leer ist oder pObject gleich null
+                //     * ist, bleibt die Liste unverändert.
+                // -> Du fügst die aktuelleNode am Ende der Liste ein. Passt das zu dem obigen Text?
                 while (tmp != null) {
                     tmp = tmp.getNext();
                 }
@@ -168,7 +174,6 @@ public class List<T> {
                 insert.setNext(aktuelleNode);
             }
         }
-        //TODO Fill
     }
     /**
      * Die Liste pList wird an die Liste angehängt. Das aktuelle Objekt
@@ -176,13 +181,20 @@ public class List<T> {
      * bleibt die Liste unverändert
      */
     public void concat(List<T> pList){
-
-        //ToDO Wienands 2
-         if (first == null && pList.first == null) {
+         if (first == null) {
              first = pList.first;
-         }
-
-         else{
+         } else{
+             //ToDo die Methode funktioniert jetzt aber da habe ich was im Text übersehen
+             //  !Das aktuelle Objekt bleibt unverändert!
+             //   Bei unserer Lösung ändern wir ja mit this.toLast() das aktuelle Objekt
+             // Lösung die das aktuelle Objekt unverändert lässt
+             /**
+              * Node<T> tmp = first;
+              * while (tmp.getNext() != null){
+              *     tmp = tmp.getNext();
+              * }
+              * tmp.setNext(pList.first);
+              */
              this.toLast();
              aktuelleNode.setNext(pList.first);
         }
@@ -201,19 +213,16 @@ public class List<T> {
         if(aktuelleNode == first){
             first = first.getNext();
         }
-        // ToDo Wienands 2
-        else if(aktuelleNode != null && first != null){
-            if(aktuelleNode.getNext() != null) {
-                Node<T> tmp = first;
+        else if(aktuelleNode != null){
+            Node<T> tmp = first;
+            if(tmp.getNext() != null) {
                 while(tmp.getNext() != aktuelleNode){
                     tmp = tmp.getNext();
                 }
-                // ToDo Wienands 2
+                //ToDo mal dir das mal auf. So passt das nicht... tmp.getNext() ist ja die aktuelleNode
+                //ToDO die beiden Zeilen getauscht würden passen ;)
                 aktuelleNode = tmp.getNext();
                 tmp.setNext(aktuelleNode.getNext());
-            }
-            else{
-                aktuelleNode = null;
             }
         }
     }
