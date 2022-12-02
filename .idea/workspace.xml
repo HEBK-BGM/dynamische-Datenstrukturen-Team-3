@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet">
+    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" afterDir="false" />
     </list>
@@ -40,7 +40,8 @@
     "WebServerToolWindowFactoryState": "false",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)"
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager">
@@ -79,7 +80,7 @@
       <workItem from="1667808362694" duration="1138000" />
       <workItem from="1667983694908" duration="1964000" />
       <workItem from="1668588883147" duration="3803000" />
-      <workItem from="1669273652447" duration="18345000" />
+      <workItem from="1669273652447" duration="23707000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -123,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669468392689</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[ADD] List hab die Insert Funktion versucht zu machen">
+      <created>1669726704241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669726704241</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +154,8 @@
     <MESSAGE value="[ADD] List / Queue / Stack funktionen gemacht" />
     <MESSAGE value="[ADD] List / Queue / Stack funktionen Überarbeitet" />
     <MESSAGE value="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet" />
+    <MESSAGE value="[ADD] List hab die Insert Funktion versucht zu machen" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] List hab die Insert Funktion versucht zu machen" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

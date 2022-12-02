@@ -121,60 +121,59 @@ public class List<T> {
         if(first == null){
             first = new Node<T>();
             first.setContext(pContext);
-        }else{
-            Node<T> tmp = first;
-            //ToDo du musst überprüfe, ob tmp.next != null ist ;)
-            while (tmp != null) {
+        }
+        else{
+            Node<T> tmp = first;//ToDo Wienands
+            while (tmp.getNext() != null) {
                 tmp = tmp.getNext();
             }
-            // ToDo die zweite if kannst du dir sparen. Du weißt nun ja, dass tmp.next == null ist
-            // ToDo also einfach tmp.setNext(new Node<T>()); und danach noch den pContext setzen ;)
-            if (tmp == null) {
-                //ToDo da tmp == null ist knallt es hier ;) nullpointer
-                // D
-                tmp.setContext(pContext);
-            }
+            // ToDo Wienands
+            // ToDo Wienands
+            // ToDo Wienands
+            Node<T> tmp2 = new Node<T>();
+            tmp2.setContext(pContext);
+            tmp.setNext(tmp2);
         }
+
     }
 
     /**
-     * Falls es ein aktuelles Objekt gibt, wird ein neues Objekt vor
-     * dem aktuellen Objekt in die Liste eingefügt. Das aktuelle Objekt
-     * bleibt unverändert. Falls die Liste leer ist und es somit kein
-     * aktuelles Objekt gibt, wird pObject in die Liste eingefügt und es
-     * gibt weiterhin kein aktuelles Objekt. Falls es kein aktuelles
-     * Objekt gibt und die Liste nicht leer ist oder pObject gleich null
+     * Falls es ein aktuelles Objekt gibt, wird ein neues Objekt vor dem aktuellen Objekt in die Liste eingefügt.
+     * Das aktuelle Objekt leibt unverändert.
+     * Falls die Liste leer ist und es somit kein aktuelles Objekt gibt, wird pObject in die Liste eingefügt und es
+     * gibt weiterhin kein aktuelles Objekt.
+     * Falls es kein aktuelles Objekt gibt und die Liste nicht leer ist oder pObject gleich null
      * ist, bleibt die Liste unverändert.
      */
     public void insert(T pContext){
-        Node<T> tmp = first; //ToDo was wemm first == null?
-        if(pContext != null) {
-            if (aktuelleNode == null) {
-                if (first == null) {
-                    //ToDo falls first == null ist, dann musst du first erst initialisieren
-                    first.setContext(pContext);
-                }
-                //ToDO Falls es kein aktuelles
-                //     * Objekt gibt und die Liste nicht leer ist oder pObject gleich null
-                //     * ist, bleibt die Liste unverändert.
-                // -> Du fügst die aktuelleNode am Ende der Liste ein. Passt das zu dem obigen Text?
-                while (tmp != null) {
-                    tmp = tmp.getNext();
-                }
 
-                tmp.setContext(pContext);
+        if(aktuelleNode == null && first !=  null || pContext == null){ //ToDo Wienands
+            return;
+        }
 
-            } else {
-                Node<T> insert = new Node<T>();
-                insert.setContext(pContext);
-                while (tmp.getNext() != aktuelleNode) {
-                    tmp = tmp.getNext();
-                }
-                tmp.setNext(insert);
-                insert.setNext(aktuelleNode);
+        if(first == null && aktuelleNode == null){
+            Node<T> first = new Node<T>();
+            first.setContext(pContext);
+        }
+
+        if(first == null){
+            Node<T> first = new Node<T>();
+        }
+
+        Node<T> tmp = first; //ToDo Wienands
+
+        if(aktuelleNode != null){
+            Node<T> insert = new Node<T>();
+            insert.setContext(pContext);
+            while (tmp.getNext() != aktuelleNode) {
+                tmp = tmp.getNext();
             }
+            tmp.setNext(insert);
+            insert.setNext(aktuelleNode);
         }
     }
+
+
     /**
      * Die Liste pList wird an die Liste angehängt. Das aktuelle Objekt
      * bleibt unverändert. Falls pList null oder eine leere Liste ist,
@@ -183,20 +182,16 @@ public class List<T> {
     public void concat(List<T> pList){
          if (first == null) {
              first = pList.first;
-         } else{
-             //ToDo die Methode funktioniert jetzt aber da habe ich was im Text übersehen
-             //  !Das aktuelle Objekt bleibt unverändert!
-             //   Bei unserer Lösung ändern wir ja mit this.toLast() das aktuelle Objekt
-             // Lösung die das aktuelle Objekt unverändert lässt
-             /**
-              * Node<T> tmp = first;
-              * while (tmp.getNext() != null){
-              *     tmp = tmp.getNext();
-              * }
-              * tmp.setNext(pList.first);
-              */
-             this.toLast();
-             aktuelleNode.setNext(pList.first);
+         }
+         else if(first != null && pList.first != null){
+             //ToDo Wienands
+
+              Node<T> tmp = first;
+              while (tmp.getNext() != null){
+                  tmp = tmp.getNext();
+              }
+              tmp.setNext(pList.first);
+
         }
 
     }
@@ -219,10 +214,9 @@ public class List<T> {
                 while(tmp.getNext() != aktuelleNode){
                     tmp = tmp.getNext();
                 }
-                //ToDo mal dir das mal auf. So passt das nicht... tmp.getNext() ist ja die aktuelleNode
-                //ToDO die beiden Zeilen getauscht würden passen ;)
-                aktuelleNode = tmp.getNext();
+                //ToDo Wienands
                 tmp.setNext(aktuelleNode.getNext());
+                aktuelleNode = tmp.getNext();
             }
         }
     }
