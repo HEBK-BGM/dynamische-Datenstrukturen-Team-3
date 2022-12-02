@@ -25,8 +25,10 @@ public class List<T> {
      * @return
      */
     public boolean isEmpty(){
-        //TODO fill
-        return true;
+        if(first == null){
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -35,8 +37,10 @@ public class List<T> {
      * @return
      */
     public  boolean hasAccess(){
-        //TODO fill
-        return true;
+        if (aktuelleNode != null) {
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -47,7 +51,12 @@ public class List<T> {
      * aktuelles Objekt.
      */
     public void next(){
-        //TODO fill
+        if(aktuelleNode != null && aktuelleNode.getNext() != null && first != null){
+            aktuelleNode = aktuelleNode.getNext();
+        }
+        else{
+            aktuelleNode = null;
+        }
     }
 
     /**
@@ -55,7 +64,9 @@ public class List<T> {
      * aktuelles Objekt. Ist die Liste leer, geschieht nichts
      */
     public void toFirst(){
-        //TODO fill
+        if(first != null){
+            aktuelleNode = first;
+        }
     }
 
     /**
@@ -63,7 +74,16 @@ public class List<T> {
      * aktuelles Objekt. Ist die Liste leer, geschieht nichts.
      */
     public void toLast(){
-        //TODO fill
+        //ToDo Wienands
+        if(first != null) {
+            Node tmp = first;
+
+            while (tmp.getNext() != null) {
+                tmp = tmp.getNext();
+            }
+
+            aktuelleNode = tmp;
+        }
     }
 
     /**
@@ -73,15 +93,21 @@ public class List<T> {
      * @return
      */
     public T getObject(){
-        return aktuelleNode.getContext();
+        if(aktuelleNode != null){
+            return aktuelleNode.getContext();
+        }
+
+        return null;
     }
 
     /**
      * Falls es ein aktuelles Objekt gibt und pObject ungleich null ist,
      * wird das aktuelle Objekt durch pObject ersetzt.
      */
-    public void setObject(){
-        //TODO fill
+    public void setObject(T pObjekt){
+        if(aktuelleNode.getContext() != pObjekt && pObjekt != null){
+            aktuelleNode.setContext(pObjekt);
+        }
     }
 
     /**
@@ -92,21 +118,50 @@ public class List<T> {
      * Falls pObject gleich null ist, bleibt die Liste unverändert.
      */
     public void append(T pContext){
-        //TODO fill
+        if(first == null){
+            first = new Node<T>();
+            first.setContext(pContext);
+        }else{
+            Node<T> tmp = first;
+            while (tmp.getNext() != null) {
+                tmp = tmp.getNext();
+            }
+            Node<T> tmp2 = new Node<T>();
+            tmp2.setContext(pContext);
+            tmp.setNext(tmp2);
+        }
     }
 
     /**
-     * Falls es ein aktuelles Objekt gibt, wird ein neues Objekt vor
-     * dem aktuellen Objekt in die Liste eingefügt. Das aktuelle Objekt
-     * bleibt unverändert. Falls die Liste leer ist und es somit kein
-     * aktuelles Objekt gibt, wird pObject in die Liste eingefügt und es
-     * gibt weiterhin kein aktuelles Objekt. Falls es kein aktuelles
-     * Objekt gibt und die Liste nicht leer ist oder pObject gleich null
+     * Falls es ein aktuelles Objekt gibt, wird ein neues Objekt vor dem aktuellen Objekt in die Liste eingefügt.
+     * Das aktuelle Objekt leibt unverändert.
+     * Falls die Liste leer ist und es somit kein aktuelles Objekt gibt, wird pObject in die Liste eingefügt und es
+     * gibt weiterhin kein aktuelles Objekt.
+     * Falls es kein aktuelles Objekt gibt und die Liste nicht leer ist oder pObject gleich null
      * ist, bleibt die Liste unverändert.
      */
     public void insert(T pContext){
-        //TODO fill
+        // Falle kein aktuelles Objekt oder pContext null
+        if(aktuelleNode == null || pContext == null){ //ToDo Wienands
+            return;
+        }
+
+        // Fall liste leer
+        if(first == null){
+            Node<T> first = new Node<T>();
+            first.setContext(pContext);
+            return;
+        }
+        // Fall Liste nicht leer
+        Node<T> tmp = first; //ToDo Wienands
+
+        while (tmp.getNext() != aktuelleNode){
+            tmp = tmp.getNext();
+        }
+        tmp.setNext(new Node<>(pContext));
+        tmp.getNext().setNext(aktuelleNode);
     }
+
 
     /**
      * Die Liste pList wird an die Liste angehängt. Das aktuelle Objekt
@@ -114,7 +169,17 @@ public class List<T> {
      * bleibt die Liste unverändert
      */
     public void concat(List<T> pList){
-        //TODO fill
+        if(pList != null) {
+            if (first == null) {
+                first = pList.first;
+            } else {
+                Node<T> tmp = first;
+                while (tmp.getNext() != null) {
+                    tmp = tmp.getNext();
+                }
+                tmp.setNext(pList.first);
+            }
+        }
     }
 
     /**
@@ -126,7 +191,15 @@ public class List<T> {
      * unverändert.
      */
     public void remove(){
-        //TODO fill
-    }
-
+        if(aktuelleNode == first){
+            first = first.getNext();
+        }else if(aktuelleNode != null){
+            Node<T> tmp = first;
+            while(tmp.getNext() != aktuelleNode){
+                tmp = tmp.getNext();
+            }
+                tmp.setNext(aktuelleNode.getNext());
+                aktuelleNode = tmp.getNext();
+            }
+        }
 }
