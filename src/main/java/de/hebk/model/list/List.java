@@ -121,20 +121,15 @@ public class List<T> {
         if(first == null){
             first = new Node<T>();
             first.setContext(pContext);
-        }
-        else{
-            Node<T> tmp = first;//ToDo Wienands
+        }else{
+            Node<T> tmp = first;
             while (tmp.getNext() != null) {
                 tmp = tmp.getNext();
             }
-            // ToDo Wienands
-            // ToDo Wienands
-            // ToDo Wienands
             Node<T> tmp2 = new Node<T>();
             tmp2.setContext(pContext);
             tmp.setNext(tmp2);
         }
-
     }
 
     /**
@@ -146,31 +141,25 @@ public class List<T> {
      * ist, bleibt die Liste unverändert.
      */
     public void insert(T pContext){
-
-        if(aktuelleNode == null && first !=  null || pContext == null){ //ToDo Wienands
+        // Falle kein aktuelles Objekt oder pContext null
+        if(aktuelleNode == null || pContext == null){ //ToDo Wienands
             return;
         }
 
-        if(first == null && aktuelleNode == null){
-            Node<T> first = new Node<T>();
-            first.setContext(pContext);
-        }
-
+        // Fall liste leer
         if(first == null){
             Node<T> first = new Node<T>();
+            first.setContext(pContext);
+            return;
         }
-
+        // Fall Liste nicht leer
         Node<T> tmp = first; //ToDo Wienands
 
-        if(aktuelleNode != null){
-            Node<T> insert = new Node<T>();
-            insert.setContext(pContext);
-            while (tmp.getNext() != aktuelleNode) {
-                tmp = tmp.getNext();
-            }
-            tmp.setNext(insert);
-            insert.setNext(aktuelleNode);
+        while (tmp.getNext() != aktuelleNode){
+            tmp = tmp.getNext();
         }
+        tmp.setNext(new Node<>(pContext));
+        tmp.getNext().setNext(aktuelleNode);
     }
 
 
@@ -180,20 +169,17 @@ public class List<T> {
      * bleibt die Liste unverändert
      */
     public void concat(List<T> pList){
-         if (first == null) {
-             first = pList.first;
-         }
-         else if(first != null && pList.first != null){
-             //ToDo Wienands
-
-              Node<T> tmp = first;
-              while (tmp.getNext() != null){
-                  tmp = tmp.getNext();
-              }
-              tmp.setNext(pList.first);
-
+        if(pList != null) {
+            if (first == null) {
+                first = pList.first;
+            } else {
+                Node<T> tmp = first;
+                while (tmp.getNext() != null) {
+                    tmp = tmp.getNext();
+                }
+                tmp.setNext(pList.first);
+            }
         }
-
     }
 
     /**
@@ -207,18 +193,13 @@ public class List<T> {
     public void remove(){
         if(aktuelleNode == first){
             first = first.getNext();
-        }
-        else if(aktuelleNode != null){
+        }else if(aktuelleNode != null){
             Node<T> tmp = first;
-            if(tmp.getNext() != null) {
-                while(tmp.getNext() != aktuelleNode){
-                    tmp = tmp.getNext();
-                }
-                //ToDo Wienands
+            while(tmp.getNext() != aktuelleNode){
+                tmp = tmp.getNext();
+            }
                 tmp.setNext(aktuelleNode.getNext());
                 aktuelleNode = tmp.getNext();
             }
         }
-    }
-
 }
