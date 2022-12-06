@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/CSVReader/Questions.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +18,7 @@
         <option value="UML Sequence" />
         <option value="UML Class" />
         <option value="UML Object" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,15 +35,9 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
-  }
-}]]></component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.hebk.Main" />
@@ -131,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669726704241</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="[ADD] CSVReader">
+      <created>1670227901508</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670227901508</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -147,6 +148,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Project" />
@@ -155,7 +157,8 @@
     <MESSAGE value="[ADD] List / Queue / Stack funktionen Überarbeitet" />
     <MESSAGE value="[ADD] List / Queue / Stack funktionen Nochmal Überarbeitet" />
     <MESSAGE value="[ADD] List hab die Insert Funktion versucht zu machen" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] List hab die Insert Funktion versucht zu machen" />
+    <MESSAGE value="[ADD] CSVReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] CSVReader" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
