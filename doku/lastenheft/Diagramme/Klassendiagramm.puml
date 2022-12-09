@@ -81,11 +81,18 @@ class de.hebk.game.Questions{
 }
 
 class de.hebk.menu.User{
-
+- String name
+- double punktzahl
+- void anmeldung()
+- void breakLine()
++ String getName()
++ double getPunktzahl()
 }
 
-class de.hebk.CSVreader{
-
+class de.hebk.CSVReader{
+- String path
++ ArrayList<String> loadFile(String path)
++ String getPath()
 }
 
 class de.hebk.menu.Menu{
