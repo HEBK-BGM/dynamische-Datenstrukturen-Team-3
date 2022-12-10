@@ -8,9 +8,21 @@ import java.util.ArrayList;
 
 public class CSVReader {
     /**
+     * Attribute
+     */
+    String path = "src/main/java/de/hebk/menu/CSVReader/Questions.csv";
+
+    /**
+     * Konstruktor für CSVReader
+     */
+    public CSVReader() {
+        loadFile(path);
+    }
+
+    /**
      * Diese Methode liest die CSV-Datei mit den Fragen, indem sie jede Zeile der Datei durchgeht und einer Liste hinzufügt.
-     * @param path
-     * @return
+     * @param path Dateipfad
+     * @return Zurückgegebene Liste
      */
     public ArrayList<String> loadFile(String path) {
         File file = new File(path);
@@ -27,5 +39,9 @@ public class CSVReader {
         }
 
         return list;
+    }
+
+    public String getPath() {
+        return this.path;
     }
 }
