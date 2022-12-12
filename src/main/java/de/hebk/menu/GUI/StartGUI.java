@@ -7,6 +7,7 @@ public class StartGUI {
     private JButton singelplayerButton;
     private JButton button2;
     private JButton helpButton;
+    private JTextField werWirdMillionärTextField;
 
 
     public static void main(String[] args) {
