@@ -18,7 +18,7 @@ public class Questions {
      * String-Array für die Antworten
      */
 
-    private final String[] answers = new String[4];
+    private String[] answers = new String[4];
 
     /**
      * Schwierigkeit als int
@@ -136,7 +136,7 @@ public class Questions {
 
     /**
      * Setzt die Schwierigkeit
-     * @param difficulty Schwierigkeit als String
+     * @param difficulty Schwierigkeit als int
      */
 
     public void setDifficulty(int difficulty) {
