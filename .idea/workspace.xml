@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/game/Questions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/game/Questions.java" afterDir="false" />
-    </list>
+    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +82,10 @@
       <workItem from="1668588883147" duration="3803000" />
       <workItem from="1669273652447" duration="23707000" />
       <workItem from="1670569851319" duration="4299000" />
-      <workItem from="1670923047398" duration="2311000" />
+      <workItem from="1670923047398" duration="3116000" />
+      <workItem from="1670926527271" duration="1035000" />
+      <workItem from="1670964570997" duration="259000" />
+      <workItem from="1671008580318" duration="2534000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -157,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1670572929701</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="[ADD] Klasse Questions">
+      <created>1670925711366</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1670925711367</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[FIX] CSVReader mit Questions anstatt mit Strings">
+      <created>1671011107519</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671011107519</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,7 +199,9 @@
     <MESSAGE value="[ADD] CSVReader" />
     <MESSAGE value="[ADD] CSVFile" />
     <MESSAGE value="[ADD] Anmeldung + [FIX] Fixes + [CHA] Klassendiagramm" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Anmeldung + [FIX] Fixes + [CHA] Klassendiagramm" />
+    <MESSAGE value="[ADD] Klasse Questions" />
+    <MESSAGE value="[FIX] CSVReader mit Questions anstatt mit Strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX] CSVReader mit Questions anstatt mit Strings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
