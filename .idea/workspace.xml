@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="" />
+    <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/CSVReader/CSVReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/CSVReader/CSVReader.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,9 +44,11 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="WebServerToolWindowFactoryState" value="false" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.hebk.Main" />
@@ -85,7 +90,8 @@
       <workItem from="1670923047398" duration="3116000" />
       <workItem from="1670926527271" duration="1035000" />
       <workItem from="1670964570997" duration="259000" />
-      <workItem from="1671008580318" duration="2534000" />
+      <workItem from="1671008580318" duration="3747000" />
+      <workItem from="1671458233239" duration="681000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -171,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671011107519</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="[FIX] Kleiner Fix">
+      <created>1671011240489</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671011240489</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +200,6 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init Project" />
@@ -201,7 +213,8 @@
     <MESSAGE value="[ADD] Anmeldung + [FIX] Fixes + [CHA] Klassendiagramm" />
     <MESSAGE value="[ADD] Klasse Questions" />
     <MESSAGE value="[FIX] CSVReader mit Questions anstatt mit Strings" />
-    <option name="LAST_COMMIT_MESSAGE" value="[FIX] CSVReader mit Questions anstatt mit Strings" />
+    <MESSAGE value="[FIX] Kleiner Fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="[FIX] Kleiner Fix" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
