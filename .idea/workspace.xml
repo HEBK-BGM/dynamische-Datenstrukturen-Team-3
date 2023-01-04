@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,11 +49,18 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/niklas.kamm/IdeaProjects/dynamische-Datenstrukturen-Team-3/src/main/java/de/hebk/menu/CSVReader",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niklas.kamm\IdeaProjects\dynamische-Datenstrukturen-Team-3\src\main\java\de\hebk\menu\CSVReader" />
+      <recent name="C:\Users\niklas.kamm\IdeaProjects\dynamische-Datenstrukturen-Team-3\src\main\java\de\hebk\menu\GUI" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Menu">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.hebk.Main" />
