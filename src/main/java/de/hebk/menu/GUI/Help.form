@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.hebk.menu.GUI.Help">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-16711423"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="fc9fd" class="javax.swing.JTextField" binding="hierMussDieSpielanleitungTextField" default-binding="true">
@@ -15,8 +17,17 @@
           </grid>
         </constraints>
         <properties>
+          <background color="-16711423"/>
           <editable value="false"/>
           <text value="hier muss die Spielanleitung rein"/>
+        </properties>
+      </component>
+      <component id="77654" class="javax.swing.JButton" binding="zurueckButton">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Zurueck"/>
         </properties>
       </component>
     </children>
