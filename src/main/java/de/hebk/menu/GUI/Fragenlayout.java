@@ -1,14 +1,14 @@
 package de.hebk.menu.GUI;
-import de.hebk.menu.Menu;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Fragenlayout extends JFrame{
+public class Fragenlayout{
+
+    private StartGUI frame;
     private JTextPane Geldanzeige;
-    private JPanel Pannel1;
+    private JPanel panel1;
     private JTextPane Fragennummer;
     private JButton jokerButton;
     private JTextField Frage;
@@ -16,23 +16,33 @@ public class Fragenlayout extends JFrame{
     private JButton Antwort_2;
     private JButton Antwort_3;
     private JButton Antwort_4;
+    private JButton menueButton;
 
-    public Fragenlayout(String Name, JPanel pannel2){ // Der soll Pannel2 einfach als Pannel 1 benutzen
-        this.add(Pannel1);
-        this.setSize(800,800);
-        this.setVisible(true);
+    public Fragenlayout(StartGUI gui){
+        this.frame = gui;
+        frame.add(panel1);
+        frame.setVisible(true);
 
         jokerButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
                 System.out.println("Button Pressed");
-                Pannel1.setVisible(false);
-                joker();
+                frame.remove(panel1);
+                Joker joker = new Joker(frame);
+            }
+        });
+
+        menueButton.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Menue Button Pressed");
+                frame.setVisible(false);
+                StartGUI start = new StartGUI("Wer wird Millionaer");
             }
         });
     }
 
-    public void joker(){
-        Menu.joker();
+    private JPanel getPanel() {
+        return panel1;
     }
 }

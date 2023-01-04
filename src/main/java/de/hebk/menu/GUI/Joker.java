@@ -1,19 +1,38 @@
 package de.hebk.menu.GUI;
 
-import javax.swing.*;
+import de.hebk.menu.GUI.Fragenlayout;
 
-public class Joker extends JFrame{
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class Joker{
+
+    private StartGUI frame;
     private JPanel panel1;
     private JTextArea welchenJokerMoechtestDuTextArea;
     private JButton a5050Button;
     private JButton telefonjokerButton;
     private JButton publikumsjokerButton;
+    private JButton zurueckButton;
 
-    private void createUIComponents() {
-        this.add(panel1);
-        this.setSize(800,800);
-        this.setVisible(true);
+    public Joker(StartGUI gui) {
+        this.frame = gui;
+        frame.add(panel1);
+        frame.setVisible(true);
+
+        zurueckButton.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Zurueck Button Pressed");
+                frame.remove(panel1);
+                Fragenlayout fragen = new Fragenlayout(frame); // TODO: Muss noch geändert werden, dass der genau auf die vorherige frage zurueck geht
+            }
+        });
     }
 
+    private JPanel getPanel() {
+        return panel1;
+    }
 
 }

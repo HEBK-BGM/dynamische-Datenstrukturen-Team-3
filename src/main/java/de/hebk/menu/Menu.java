@@ -23,13 +23,4 @@ public class Menu {
         StartGUI guiStart = new StartGUI("Wer wird Millionaer");
         }
 
-        public static void fragen(JPanel pannel1){
-            Fragenlayout fragen = new Fragenlayout("Frage " + i, pannel1);
-            i++;
-        }
-
-        public static void joker(){
-        Joker joker1 = new Joker();
-        }
-
 }
