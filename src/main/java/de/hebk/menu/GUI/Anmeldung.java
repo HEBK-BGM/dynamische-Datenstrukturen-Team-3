@@ -5,20 +5,33 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class Anmeldung extends JFrame implements ActionListener {
+public class Anmeldung /*extends JFrame implements ActionListener*/ {
 
-    private JPanel panel;
-    private JFrame frame;
-    private JLabel userLabel;
-    private JTextField userText;
-    private JLabel passwordLabel;
-    private JPasswordField passwordText;
-    private JButton button;
-    private JLabel success;
+    private JPanel panel1;
+    private StartGUI frame;
+    private JTextField getNametextField2;
+    private JTextField nameTextField;
+    private JTextField passwortAbfrage;
+    private JPasswordField getpasswordField1;
+    private JButton fertigButton1;
+
+    /*
+        private JPanel panel;
+        private JFrame frame;
+        private JLabel userLabel;
+        private JTextField userText;
+        private JLabel passwordLabel;
+        private JPasswordField passwordText;
+        private JButton button;
+        private JLabel success;
+        private JPanel panel1;
+
+         */
     public Anmeldung(StartGUI gui) {
         this.frame = gui;
-        frame.add(panel);
+        frame.add(panel1);
         frame.setVisible(true);
+
         /*
         panel = new JPanel();
         frame = new JFrame();
@@ -56,15 +69,18 @@ public class Anmeldung extends JFrame implements ActionListener {
 
         frame.setVisible(true);
         */
-    }
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        frame.setVisible(false);
-        StartGUI start = new StartGUI("Wer wird Millionaer");
+        fertigButton1.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.setVisible(false);
+                StartGUI start = new StartGUI("Wer wird Millionaer");
+            }
+        });
+
     }
 
     private JPanel getPanel() {
-        return panel;
+        return panel1;
     }
 }
