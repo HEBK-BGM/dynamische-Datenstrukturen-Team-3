@@ -7,10 +7,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Help {
+    /**
+     * Attribute
+     */
     private StartGUI frame;
     private JTextField hierMussDieSpielanleitungTextField; //ToDo hierMussDieSpielanleitungTextField
     private JPanel panel1;
     private JButton zurueckButton;
+
+    /**
+     * Konstruktor für die Hilfe mit der GUI von der StartGUI
+     * @param gui GUI von der StartGUI
+     */
 
     public Help(StartGUI gui){
         this.frame = gui;
@@ -27,6 +35,10 @@ public class Help {
         });
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     public JPanel Panel(){
         return panel1;
     }

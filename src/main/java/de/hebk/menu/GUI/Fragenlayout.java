@@ -5,7 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Fragenlayout{
-
+    /**
+     * Attribute
+     */
     private StartGUI frame;
     private JTextPane Geldanzeige;
     private JPanel panel1;
@@ -18,6 +20,10 @@ public class Fragenlayout{
     private JButton Antwort_4;
     private JButton menueButton;
 
+    /**
+     * Konstruktor für das Fragenlayout mit der GUI von der Klasse StartGUI
+     * @param gui GUI von der StartGUI
+     */
     public Fragenlayout(StartGUI gui){
         this.frame = gui;
         frame.add(panel1);
@@ -42,6 +48,10 @@ public class Fragenlayout{
         });
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     private JPanel getPanel() {
         return panel1;
     }

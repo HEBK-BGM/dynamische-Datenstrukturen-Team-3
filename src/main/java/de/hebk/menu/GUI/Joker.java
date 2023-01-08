@@ -8,6 +8,9 @@ import java.awt.event.ActionListener;
 
 public class Joker{
 
+    /**
+     * Attribute
+     */
     private StartGUI frame;
     private JPanel panel1;
     private JTextArea welchenJokerMoechtestDuTextArea;
@@ -16,6 +19,10 @@ public class Joker{
     private JButton publikumsjokerButton;
     private JButton zurueckButton;
 
+    /**
+     * Konstruktor für die Joker mit der GUI von der StartGUI
+     * @param gui GUI von der StartGUI
+     */
     public Joker(StartGUI gui) {
         this.frame = gui;
         frame.add(panel1);
@@ -31,6 +38,10 @@ public class Joker{
         });
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     private JPanel getPanel() {
         return panel1;
     }

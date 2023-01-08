@@ -1,4 +1,5 @@
 package de.hebk.menu.GUI;
+import de.hebk.menu.User;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,6 +8,11 @@ import javax.swing.*;
 
 public class Anmeldung extends JFrame implements ActionListener {
 
+    // TODO: GUI von der StartGUI übernehmen und Name + Passwort in der StartGUI anzeigen lassen
+
+    /**
+     * Attribute
+     */
     private JPanel panel;
     private JFrame frame;
     private JLabel userLabel;
@@ -14,15 +20,18 @@ public class Anmeldung extends JFrame implements ActionListener {
     private JLabel passwordLabel;
     private JPasswordField passwordText;
     private JButton button;
-    private JLabel success;
-    public Anmeldung(StartGUI gui) {
-        this.frame = gui;
-        frame.add(panel);
-        frame.setVisible(true);
-        /*
+
+    private String userName;
+    private String passwort;
+    public static User currentUser;
+
+    /**
+     * Konstruktor Anmeldung
+     */
+    public Anmeldung() {
         panel = new JPanel();
         frame = new JFrame();
-        frame.setSize(350, 200);
+        frame.setSize(800,800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.add(panel);
@@ -38,33 +47,45 @@ public class Anmeldung extends JFrame implements ActionListener {
         panel.add(userText);
 
         passwordLabel = new JLabel("Passwort");
-        passwordLabel.setBounds(10, 50, 160, 50);
+        passwordLabel.setBounds(10, 200, 160, 50);
         panel.add(passwordLabel);
 
         passwordText = new JPasswordField();
-        passwordText.setBounds(100, 50, 330, 50);
+        passwordText.setBounds(100, 200, 330, 50);
         panel.add(passwordText);
 
         button = new JButton("Login");
-        button.setBounds(10, 80, 160, 50);
+        button.setBounds(10, 300, 160, 50);
         button.addActionListener(this);
         panel.add(button);
 
-        success = new JLabel("");
-        success.setBounds(10,110,600,50);
-        panel.add(success);
-
         frame.setVisible(true);
-        */
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        currentUser = new User(userText.getText(), passwordText.getText());
         frame.setVisible(false);
         StartGUI start = new StartGUI("Wer wird Millionaer");
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     private JPanel getPanel() {
         return panel;
     }
+
+    /**
+     * Gibt den UserName zuück
+     * @return UserName
+     */
+    private JTextField getUserText() { return userText; }
+
+    /**
+     * Gibt das UserPasswort zurück
+     * @return UserPasswort
+     */
+    private JPasswordField getPasswordText() { return passwordText; }
 }
