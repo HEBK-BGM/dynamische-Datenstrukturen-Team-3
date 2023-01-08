@@ -74,7 +74,6 @@ public class List<T> {
      * aktuelles Objekt. Ist die Liste leer, geschieht nichts.
      */
     public void toLast(){
-        //ToDo Wienands
         if(first != null) {
             Node tmp = first;
 
@@ -142,7 +141,7 @@ public class List<T> {
      */
     public void insert(T pContext){
         // Falle kein aktuelles Objekt oder pContext null
-        if(aktuelleNode == null || pContext == null){ //ToDo Wienands
+        if(aktuelleNode == null || pContext == null){
             return;
         }
 
@@ -153,7 +152,7 @@ public class List<T> {
             return;
         }
         // Fall Liste nicht leer
-        Node<T> tmp = first; //ToDo Wienands
+        Node<T> tmp = first;
 
         while (tmp.getNext() != aktuelleNode){
             tmp = tmp.getNext();
