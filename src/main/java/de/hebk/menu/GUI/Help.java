@@ -11,7 +11,7 @@ public class Help {
      * Attribute
      */
     private StartGUI frame;
-    private JTextField hierMussDieSpielanleitungTextField; //ToDo hierMussDieSpielanleitungTextField
+    private JTextField spielanleitung; //ToDo hierMussDieSpielanleitungTextField
     private JPanel panel1;
     private JButton zurueckButton;
 
