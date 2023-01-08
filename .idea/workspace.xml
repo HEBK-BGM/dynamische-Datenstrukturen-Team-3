@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/game/Joker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/game/Joker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +115,7 @@
       <workItem from="1670964570997" duration="259000" />
       <workItem from="1671008580318" duration="2534000" />
       <workItem from="1672672836164" duration="7167000" />
-      <workItem from="1673181557796" duration="5879000" />
+      <workItem from="1673181557796" duration="7233000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -222,7 +222,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673186574931</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="[ADD] Joker-Klasse Grundgerüst">
+      <created>1673187530947</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1673187530947</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +261,8 @@
     <MESSAGE value="[ADD] KA" />
     <MESSAGE value="[ADD] Beginn Anmeldung (muss noch mit dem Startbildschirm verknüpft werden)" />
     <MESSAGE value="[ADD] Weiterführung Anmeldung (noch nicht fertig, siehe TODO in Klasse Anmeldung) + [ADD] JDoc Kommentare" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Weiterführung Anmeldung (noch nicht fertig, siehe TODO in Klasse Anmeldung) + [ADD] JDoc Kommentare" />
+    <MESSAGE value="[ADD] Joker-Klasse Grundgerüst" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Joker-Klasse Grundgerüst" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
