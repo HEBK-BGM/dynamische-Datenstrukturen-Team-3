@@ -1,6 +1,4 @@
 package de.hebk.menu.GUI;
-import de.hebk.menu.Menu;
-import de.hebk.menu.GUI.Fragenlayout;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,6 +12,7 @@ public class StartGUI extends JFrame{
     private JButton helpButton;
     private JTextField werWirdMillionaerTextField;
     private JButton Scoreboard;
+    private JButton anmeldeButton;
 
 
     public StartGUI(String name){
@@ -30,7 +29,7 @@ public class StartGUI extends JFrame{
             public void actionPerformed(ActionEvent e){
                 System.out.println("Button Pressed");
                 remove(panel1);
-                new Fragenlayout(StartGUI.this);
+                new Fragenlayout(StartGUI.this, 1);
             }
         });
 
@@ -40,6 +39,15 @@ public class StartGUI extends JFrame{
                 System.out.println("Help Button Pressed");
                 remove(panel1);
                 new Help(StartGUI.this);
+            }
+        });
+
+        anmeldeButton.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e){
+                System.out.println("Anmelden Button Pressed");
+                remove(panel1);
+                new Anmeldung(StartGUI.this);
             }
         });
     }

@@ -16,7 +16,7 @@ public class Joker{
     private JButton publikumsjokerButton;
     private JButton zurueckButton;
 
-    public Joker(StartGUI gui) {
+    public Joker(StartGUI gui, int i) {
         this.frame = gui;
         frame.add(panel1);
         frame.setVisible(true);
@@ -26,7 +26,7 @@ public class Joker{
             public void actionPerformed(ActionEvent e){
                 System.out.println("Zurueck Button Pressed");
                 frame.remove(panel1);
-                Fragenlayout fragen = new Fragenlayout(frame); // TODO: Muss noch geändert werden, dass der genau auf die vorherige frage zurueck geht
+                Fragenlayout fragen = new Fragenlayout(frame, i);
             }
         });
     }

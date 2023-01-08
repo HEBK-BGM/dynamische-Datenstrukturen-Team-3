@@ -18,7 +18,7 @@ public class Fragenlayout{
     private JButton Antwort_4;
     private JButton menueButton;
 
-    public Fragenlayout(StartGUI gui){
+    public Fragenlayout(StartGUI gui, int frageNr){
         this.frame = gui;
         frame.add(panel1);
         frame.setVisible(true);
@@ -28,7 +28,7 @@ public class Fragenlayout{
             public void actionPerformed(ActionEvent e){
                 System.out.println("Button Pressed");
                 frame.remove(panel1);
-                Joker joker = new Joker(frame);
+                Joker joker = new Joker(frame, frageNr);
             }
         });
 
