@@ -29,7 +29,7 @@ public class StartGUI extends JFrame{
             public void actionPerformed(ActionEvent e){
                 System.out.println("Button Pressed");
                 remove(panel1);
-                new Fragenlayout(StartGUI.this);
+                new Fragenlayout(StartGUI.this, 1);
             }
         });
 
