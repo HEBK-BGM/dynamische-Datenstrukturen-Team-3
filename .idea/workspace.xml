@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/game/Joker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/game/Joker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +115,7 @@
       <workItem from="1670964570997" duration="259000" />
       <workItem from="1671008580318" duration="2534000" />
       <workItem from="1672672836164" duration="7167000" />
-      <workItem from="1673181557796" duration="4761000" />
+      <workItem from="1673181557796" duration="5879000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -223,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672874592243</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="[ADD] Weiterführung Anmeldung (noch nicht fertig, siehe TODO in Klasse Anmeldung) + [ADD] JDoc Kommentare">
+      <created>1673186574930</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1673186574931</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,7 +253,8 @@
     <MESSAGE value="[FIX] CSVReader mit Questions anstatt mit Strings" />
     <MESSAGE value="[ADD] KA" />
     <MESSAGE value="[ADD] Beginn Anmeldung (muss noch mit dem Startbildschirm verknüpft werden)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Beginn Anmeldung (muss noch mit dem Startbildschirm verknüpft werden)" />
+    <MESSAGE value="[ADD] Weiterführung Anmeldung (noch nicht fertig, siehe TODO in Klasse Anmeldung) + [ADD] JDoc Kommentare" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Weiterführung Anmeldung (noch nicht fertig, siehe TODO in Klasse Anmeldung) + [ADD] JDoc Kommentare" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
