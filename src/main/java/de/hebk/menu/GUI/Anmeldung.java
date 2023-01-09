@@ -1,4 +1,5 @@
 package de.hebk.menu.GUI;
+import de.hebk.menu.User;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -7,6 +8,9 @@ import javax.swing.*;
 
 public class Anmeldung /*extends JFrame implements ActionListener*/ {
 
+    /**
+     * Attribute
+     */
     private JPanel panel1;
     private StartGUI frame;
     private JTextField getNametextField2;
@@ -27,6 +31,11 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
         private JPanel panel1;
 
          */
+
+    /**
+     * Konstruktor für die Anmeldung mit der GUI der StartGUI
+     * @param gui GUI der StartGUI
+     */
     public Anmeldung(StartGUI gui) {
         this.frame = gui;
         frame.add(panel1);
@@ -35,7 +44,7 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
         /*
         panel = new JPanel();
         frame = new JFrame();
-        frame.setSize(350, 200);
+        frame.setSize(800,800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.add(panel);
@@ -51,25 +60,24 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
         panel.add(userText);
 
         passwordLabel = new JLabel("Passwort");
-        passwordLabel.setBounds(10, 50, 160, 50);
+        passwordLabel.setBounds(10, 200, 160, 50);
         panel.add(passwordLabel);
 
         passwordText = new JPasswordField();
-        passwordText.setBounds(100, 50, 330, 50);
+        passwordText.setBounds(100, 200, 330, 50);
         panel.add(passwordText);
 
         button = new JButton("Login");
-        button.setBounds(10, 80, 160, 50);
+        button.setBounds(10, 300, 160, 50);
         button.addActionListener(this);
         panel.add(button);
-
-        success = new JLabel("");
-        success.setBounds(10,110,600,50);
-        panel.add(success);
 
         frame.setVisible(true);
         */
 
+        /**
+         * ActionListener für den Fertig-Button
+         */
         fertigButton1.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -80,7 +88,12 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
 
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     private JPanel getPanel() {
         return panel1;
     }
+
 }
