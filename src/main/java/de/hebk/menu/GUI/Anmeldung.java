@@ -6,29 +6,34 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class Anmeldung extends JFrame implements ActionListener {
+public class Anmeldung /*extends JFrame implements ActionListener*/ {
 
-    // TODO: GUI von der StartGUI übernehmen und Name + Passwort in der StartGUI anzeigen lassen
+    private JPanel panel1;
+    private StartGUI frame;
+    private JTextField getNametextField2;
+    private JTextField nameTextField;
+    private JTextField passwortAbfrage;
+    private JPasswordField getpasswordField1;
+    private JButton fertigButton1;
 
-    /**
-     * Attribute
-     */
-    private JPanel panel;
-    private JFrame frame;
-    private JLabel userLabel;
-    private JTextField userText;
-    private JLabel passwordLabel;
-    private JPasswordField passwordText;
-    private JButton button;
+    /*
+        private JPanel panel;
+        private JFrame frame;
+        private JLabel userLabel;
+        private JTextField userText;
+        private JLabel passwordLabel;
+        private JPasswordField passwordText;
+        private JButton button;
+        private JLabel success;
+        private JPanel panel1;
 
-    private String userName;
-    private String passwort;
-    public static User currentUser;
+         */
+    public Anmeldung(StartGUI gui) {
+        this.frame = gui;
+        frame.add(panel1);
+        frame.setVisible(true);
 
-    /**
-     * Konstruktor Anmeldung
-     */
-    public Anmeldung() {
+        /*
         panel = new JPanel();
         frame = new JFrame();
         frame.setSize(800,800);
@@ -60,13 +65,16 @@ public class Anmeldung extends JFrame implements ActionListener {
         panel.add(button);
 
         frame.setVisible(true);
-    }
+        */
 
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        currentUser = new User(userText.getText(), passwordText.getText());
-        frame.setVisible(false);
-        StartGUI start = new StartGUI("Wer wird Millionaer");
+        fertigButton1.addActionListener(new ActionListener(){
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                frame.setVisible(false);
+                StartGUI start = new StartGUI("Wer wird Millionaer");
+            }
+        });
+
     }
 
     /**
@@ -74,7 +82,7 @@ public class Anmeldung extends JFrame implements ActionListener {
      * @return Panel
      */
     private JPanel getPanel() {
-        return panel;
+        return panel1;
     }
 
     /**
