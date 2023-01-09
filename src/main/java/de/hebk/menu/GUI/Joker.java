@@ -19,6 +19,11 @@ public class Joker{
     private JButton publikumsjokerButton;
     private JButton zurueckButton;
 
+    /**
+     * Konstruktor für Joker mit der GUI der StartGUI
+     * @param gui GUI der StartGUI
+     * @param i
+     */
     public Joker(StartGUI gui, int i) {
         this.frame = gui;
         frame.add(panel1);

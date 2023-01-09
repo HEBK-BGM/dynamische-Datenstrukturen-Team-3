@@ -8,6 +8,9 @@ import javax.swing.*;
 
 public class Anmeldung /*extends JFrame implements ActionListener*/ {
 
+    /**
+     * Attribute
+     */
     private JPanel panel1;
     private StartGUI frame;
     private JTextField getNametextField2;
@@ -28,6 +31,11 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
         private JPanel panel1;
 
          */
+
+    /**
+     * Konstruktor für die Anmeldung mit der GUI der StartGUI
+     * @param gui GUI der StartGUI
+     */
     public Anmeldung(StartGUI gui) {
         this.frame = gui;
         frame.add(panel1);
@@ -67,6 +75,9 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
         frame.setVisible(true);
         */
 
+        /**
+         * ActionListener für den Fertig-Button
+         */
         fertigButton1.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -85,15 +96,4 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
         return panel1;
     }
 
-    /**
-     * Gibt den UserName zuück
-     * @return UserName
-     */
-    private JTextField getUserText() { return userText; }
-
-    /**
-     * Gibt das UserPasswort zurück
-     * @return UserPasswort
-     */
-    private JPasswordField getPasswordText() { return passwordText; }
 }

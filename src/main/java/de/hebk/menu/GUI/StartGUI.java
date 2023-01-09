@@ -30,6 +30,9 @@ public class StartGUI extends JFrame{
         this.setLocationRelativeTo(null);
         this.setVisible(true);
 
+        /**
+         * ActionListener für den Singleplayer-Button
+         */
         singelplayerButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -39,6 +42,9 @@ public class StartGUI extends JFrame{
             }
         });
 
+        /**
+         * ActionListener für den Help-Button
+         */
         helpButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -48,6 +54,9 @@ public class StartGUI extends JFrame{
             }
         });
 
+        /**
+         * ActionListener für den Anmelde-Button
+         */
         anmeldeButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){

@@ -25,6 +25,9 @@ public class Help {
         frame.add(panel1);
         frame.setVisible(true);
 
+        /**
+         * ActionListener für den zurueckButton
+         */
         zurueckButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
