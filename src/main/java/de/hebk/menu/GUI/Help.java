@@ -10,7 +10,6 @@ import java.awt.event.ActionListener;
 
 public class Help extends JFrame{
     private StartGUI frame;
-    private JTextField hierMussDieSpielanleitungTextField; //ToDo hierMussDieSpielanleitungTextField
     private JPanel panel1;
     private JTextArea textArea1;
 
