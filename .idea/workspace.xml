@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Anmeldung.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Fragenlayout.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Joker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/StartGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/model/list/List.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/hebk/menu/GUI/Help.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
