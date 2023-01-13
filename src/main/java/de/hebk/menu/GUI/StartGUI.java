@@ -37,8 +37,8 @@ public class StartGUI extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e){
                 System.out.println("Help Button Pressed");
-                remove(panel1);
-                new Help(StartGUI.this);
+                //remove(panel1);
+                new Help();
             }
         });
 
