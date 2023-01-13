@@ -10,44 +10,59 @@ public class User {
     private String name;
     private double punktzahl;
 
+    private String passwort;
+
     /**
      * Konstruktor für User
      */
-    public User() {
-        anmeldung();
+    public User(String name, String passwort) {
+        setUserName(name);
+        setPasswort(passwort);
     }
 
     /**
-     * Anmeldung für jeden User
+     * Gibt den Namen zurück
+     * @return Name
      */
-    private void anmeldung() {
-        Scanner sc = new Scanner(System.in);
-        breakLine();
-        System.out.println("Herzlich Willkommen bei Wer wird Millionär?");
-        breakLine();
-        System.out.println("Wie ist Ihr Name?");
-        breakLine();
-        this.name = sc.nextLine();
-        System.out.println("Willkommen bei Wer wird Millionär?, " + getName());
-        breakLine();
-        System.out.println("Unten links finden Sie einen Hilfe-Knopf, der Ihnen einen kurzen Überblick über das Spiel verschafft.");
-        System.out.println("Außerdem können Sie sowohl im Einzel-, als auch im Mehrspielermodus spielen.");
-        System.out.println("Um das Spiel zu starten, wählen Sie bitte einen Spielmodus aus.");
-        breakLine();
-    }
-
-    /**
-     * BreakLine Methode als optische Verbesserung
-     */
-    private void breakLine() {
-        System.out.println("----------------");
-    }
-
     public String getName() {
         return this.name;
     }
 
+    /**
+     * Gibt die Punktzahl zurück
+     * @return Punktzahl
+     */
     public double getPunktzahl() {
         return this.punktzahl;
+    }
+
+    /**
+     * Gibt das Passwort zurück
+     * @return Passwort
+     */
+    public String getPasswort() { return this.passwort; }
+
+    /**
+     * Setzt den UserName mit dem übergebenen Namen
+     * @param name UserName
+     */
+    public void setUserName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Setzt die Punktzahl mit der übergebenen Punktzahl
+     * @param punktzahl
+     */
+    public void setPunktzahl(double punktzahl) {
+        this.punktzahl = punktzahl;
+    }
+
+    /**
+     * Setzt das Passwort mit dem übergebenen Passwort
+     * @param passwort
+     */
+    public void setPasswort(String passwort) {
+        this.passwort = passwort;
     }
 }

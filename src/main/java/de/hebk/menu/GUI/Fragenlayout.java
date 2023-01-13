@@ -6,7 +6,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Fragenlayout{
-
+    /**
+     * Attribute
+     */
     private StartGUI frame;
     private JTextPane Geldanzeige;
     private JPanel panel1;
@@ -19,11 +21,19 @@ public class Fragenlayout{
     private JButton Antwort_4;
     private JButton menueButton;
 
+    /**
+     * Konstruktor für das Fragenlayout mit der GUI der StartGUI und der übergebenen Fragen-ID
+     * @param gui GUI der StartGUI
+     * @param frageNr Fragen-ID
+     */
     public Fragenlayout(StartGUI gui, int frageNr){
         this.frame = gui;
         frame.add(panel1);
         frame.setVisible(true);
 
+        /**
+         * ActionListener für den Joker-Button
+         */
         jokerButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -33,6 +43,9 @@ public class Fragenlayout{
             }
         });
 
+        /**
+         * ActionListener für den Menue-Button
+         */
         menueButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -43,6 +56,10 @@ public class Fragenlayout{
         });
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     private JPanel getPanel() {
         return panel1;
     }

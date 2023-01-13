@@ -6,6 +6,9 @@ import java.awt.event.ActionListener;
 import javax.swing.*;
 
 public class StartGUI extends JFrame{
+    /**
+     * Attribute
+     */
     private JPanel panel1;
     private JButton singelplayerButton;
     private JButton button2;
@@ -14,7 +17,10 @@ public class StartGUI extends JFrame{
     private JButton Scoreboard;
     private JButton anmeldeButton;
 
-
+    /**
+     * Konstruktor für die StartGUI mit einem Namen
+     * @param name Name der StartGUI
+     */
     public StartGUI(String name){
         super(name);
 
@@ -24,6 +30,9 @@ public class StartGUI extends JFrame{
         this.setLocationRelativeTo(null);
         this.setVisible(true);
 
+        /**
+         * ActionListener für den Singleplayer-Button
+         */
         singelplayerButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -33,6 +42,9 @@ public class StartGUI extends JFrame{
             }
         });
 
+        /**
+         * ActionListener für den Help-Button
+         */
         helpButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -42,6 +54,9 @@ public class StartGUI extends JFrame{
             }
         });
 
+        /**
+         * ActionListener für den Anmelde-Button
+         */
         anmeldeButton.addActionListener(new ActionListener(){
             @Override
             public void actionPerformed(ActionEvent e){
@@ -52,6 +67,10 @@ public class StartGUI extends JFrame{
         });
     }
 
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
     public JPanel Panel(){
         return panel1;
     }
