@@ -1,47 +1,29 @@
 package de.hebk.menu.GUI;
 
 import de.hebk.menu.GUI.StartGUI;
+import de.hebk.menu.Texte;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Help {
-    /**
-     * Attribute
-     */
+public class Help extends JFrame{
     private StartGUI frame;
-    private JTextField spielanleitung; //ToDo hierMussDieSpielanleitungTextField
     private JPanel panel1;
-    private JButton zurueckButton;
+    private JTextArea textArea1;
 
-    /**
-     * Konstruktor für die Hilfe mit der GUI von der StartGUI
-     * @param gui GUI von der StartGUI
-     */
-
-    public Help(StartGUI gui){
-        this.frame = gui;
-        frame.add(panel1);
-        frame.setVisible(true);
-
-        /**
-         * ActionListener für den zurueckButton
-         */
-        zurueckButton.addActionListener(new ActionListener(){
-            @Override
-            public void actionPerformed(ActionEvent e){
-                System.out.println("Zurueck Button Pressed");
-                frame.setVisible(false);
-                StartGUI start = new StartGUI("Wer wird Millionaer");
-            }
-        });
+    public Help(){
+        this.add(panel1);
+        this.setSize(800,800);
+        this.setLocationRelativeTo(null);
+        Font schriftart = new Font("Papyrus", Font.BOLD + Font.ITALIC, 20);
+        textArea1.setText(Texte.anleitung);
+        textArea1.setFont(schriftart);
+        textArea1.setForeground(Color.WHITE);
+        this.setVisible(true);
     }
 
-    /**
-     * Gibt das Panel zurück
-     * @return Panel
-     */
     public JPanel Panel(){
         return panel1;
     }

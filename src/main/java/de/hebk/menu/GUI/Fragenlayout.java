@@ -1,5 +1,6 @@
 package de.hebk.menu.GUI;
 
+import de.hebk.model.stack.Stack;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
