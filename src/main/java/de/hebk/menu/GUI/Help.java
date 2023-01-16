@@ -11,7 +11,7 @@ public class Help {
      * Attribute
      */
     private StartGUI frame;
-    private JTextField spielanleitung; //ToDo hierMussDieSpielanleitungTextField
+    private JTextField spielanleitung;
     private JPanel panel1;
     private JButton zurueckButton;
 
@@ -42,7 +42,7 @@ public class Help {
      * Gibt das Panel zurück
      * @return Panel
      */
-    public JPanel Panel(){
+    public JPanel getPanel(){
         return panel1;
     }
 }

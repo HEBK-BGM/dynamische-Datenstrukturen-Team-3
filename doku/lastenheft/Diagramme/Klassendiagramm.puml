@@ -26,77 +26,170 @@ MINUTES
 '/
 
 class de.hebk.model.list.List {
-- Node<T> first
-- Node<T> aktuelleNode
-+ boolean isEmpty()
-+ boolean hasAccess()
-+ void next()
-+ void toFirst()
-+ void toLast()
-+ T getObject()
-+ void setObject()
-+ void append(T)
-+ void insert(T)
-+ void concat(List<T>)
-+ void remove()
+- first: Node<T>
+- aktuelleNode: Node<T>
++ isEmpty(): boolean
++ hasAccess(): boolean
++ next(): void
++ toFirst(): void
++ toLast(): void
++ getObject(): T
++ setObject(): void
++ append(T): void
++ insert(T): void
++ concat(List<T>): void
++ remove(): void
 }
 
 class de.hebk.model.node.Node {
-- T context
-- Node<T> next
-+ T getContext()
-+ void setContext(T)
-+ Node<T> getNext()
-+ void setNext(Node<T>)
+- context: T
+- next Node<T>
++ getContext(): T
++ setContext(T): void
++ getNext(): <(Node<T>)
++ setNext(Node<T>): void
 }
 
 class de.hebk.model.queue.Queue {
-- Node<T> first
-+ boolean isEmpty()
-+ void enqueue(T)
-+ void dequeue()
-+ T front()
+- first: Node<T>
++ isEmpty(): boolean
++ enqueue(T): void
++ dequeue(): void
++ front(): T
 }
 class de.hebk.model.stack.Stack {
-- Node<T> first
-+ boolean isEmpty()
-+ void push(T)
-+ void pop()
-+ T top()
+- first: Node<T>
++ isEmpty(): boolean
++ push(T): void
++ pop(): void
++ top(): T
 }
 class de.hebk.Main {
 + {static} void main(String[])
 }
 
-class de.hebk.menu.GUI{
+class de.hebk.menu.GUI.Anmeldung{
+- panel1: JPanel
+- frame: StartGUI
+- getNametextField2: JTextField
+- nameTextField: JTextField
+- passwortAbfrage: JTextField
+- getpasswordField1: JPasswordField
+- fertigButton1: JButton
++ Anmeldung(gui: StartGUI)
++ getPanel(): JPanel
+}
 
+class de.hebk.menu.GUI.Fragenlayout{
+- frame: StartGUI
+- Geldanzeige: JTextPane
+- panel1: JPanel
+- Fragennummer: JTextPane
+- jokerButton: JButton
+- Frage: JTextField
+- Antwort_1: JButton
+- Antwort_2: JButton
+- Antwort_3: JButton
+- Antwort_4: JButton
+- menueButton: JButton
++ Fragenlayout(gui: StartGUI, frageNr: int)
++ getPanel(): JPanel
+}
+
+class de.hebk.menu.GUI.Help{
+- frame: StartGUI
+- spielanleitung: JTextField
+- panel1: JPanel
+- zurueckButton: JButton
++ Help(gui: StartGUI)
++ getPanel(): JPanel
+}
+
+class de.hebk.menu.GUI.Joker{
+- frame: StartGUI
+- panel1: JPanel
+- welchenJokerMoechtestDuTextArea: JTextArea
+- a5050Button: JButton
+- telefonjokerButton: JButton
+- publikumsjokerButton: JButton
+- zurueckButton: JButton
++ Joker(gui: StartGUI, i: int)
++ getPanel(): JPanel
+}
+
+class de.hebk.menu.GUI.StartGUI{
+- panel1: JPanel
+- singelplayerButton: JButton
+- button2: JButton
+- helpButton: JButton
+- werWirdMillionaerTextField: JTextField
+- Scoreboard: JButton
+- anmeldeButton: JButton
++ StartGUI(name: String)
++ getPanel(): JPanel
 }
 
 class de.hebk.game.Joker{
-
+- name: String
++ Joker(pName: String)
++ getName(): String
++ setName(pName: String): void
 }
 
 class de.hebk.game.Questions{
-
+- question: String
+- id: int
+- answers[4]: String
+- difficulty: int
++ Questions(pID: int, pDifficulty: int, pQuestion: String, pAnswer1: String, pAnswer2: String, pAnswer3: String, pRightAnswer: String)
++ getWrongAnswers(): String[]
++ getRightAnswer(): String
++ getQuestion(): String
++ getDifficulty(): int
++ getId(): int
++ getDifficultyString(): String
++ setId(id: int): void
++ setQuestion(question: String): void
++ setDifficulty(difficulty: int): void
 }
 
 class de.hebk.menu.User{
-- String name
-- double punktzahl
-- void anmeldung()
-- void breakLine()
-+ String getName()
-+ double getPunktzahl()
+- name: String
+- punktzahl: double
+- passwort: String
++ User(name: String, passwort: String)
++ getName(): String
++ getPunktzahl(): double
++ getPasswort(): String
++ setUserName(name: String): void
++ setPunktzahl(punktzahl: double): void
++ setPasswort(passwort: String): void
 }
 
-class de.hebk.CSVReader{
-- String path
-+ ArrayList<String> loadFile(String path)
-+ String getPath()
+class de.hebk.menu.CSVReader.CSVReader{
+- path: String
++ loadFileList(path: String): List<Questions>
++ loadFileStack(path: String): Stack<Questions>
++ loadFileQueue(path: String): Queue<Questions>
++ getPath(): String
 }
 
 class de.hebk.menu.Menu{
-
++ {static} void main(String[])
 }
 
+de.hebk.Main *-- "1" de.hebk.menu.Menu: hat ein Menu
+de.hebk.menu.CSVReader.CSVReader o-- "1" de.hebk.model.node.Node: hat eine Node
+de.hebk.model.node.Node o-- "1" de.hebk.model.list.List: hat eine List
+de.hebk.model.node.Node o-- "1" de.hebk.model.queue.Queue: hat eine Queue
+de.hebk.model.node.Node o-- "1" de.hebk.model.stack.Stack: hat einen Stack
+de.hebk.menu.Menu *-- de.hebk.menu.User: hat User
+de.hebk.menu.Menu *-- "1" de.hebk.menu.CSVReader.CSVReader: hat einen CSVReader
+de.hebk.Main *-- de.hebk.game.Questions: hat Questions
+de.hebk.Main *-- "3" de.hebk.game.Joker: hat 3 Joker
+de.hebk.menu.Menu *-- "1" de.hebk.menu.GUI.Anmeldung: hat eine Anmeldung
+de.hebk.menu.Menu *-- "1" de.hebk.menu.GUI.Fragenlayout: hat ein Fragenlayout
+de.hebk.menu.Menu *-- "1" de.hebk.menu.GUI.Help: hat eine Help-GUI
+de.hebk.menu.Menu *-- "1" de.hebk.menu.GUI.Joker: hat eine Joker-GUI
+de.hebk.menu.Menu *-- "1" de.hebk.menu.GUI.StartGUI: hat eine StartGUI
 @enduml

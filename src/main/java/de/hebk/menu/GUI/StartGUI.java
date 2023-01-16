@@ -71,7 +71,7 @@ public class StartGUI extends JFrame{
      * Gibt das Panel zurück
      * @return Panel
      */
-    public JPanel Panel(){
+    public JPanel getPanel(){
         return panel1;
     }
 }

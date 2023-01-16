@@ -92,7 +92,7 @@ public class Anmeldung /*extends JFrame implements ActionListener*/ {
      * Gibt das Panel zurück
      * @return Panel
      */
-    private JPanel getPanel() {
+    public JPanel getPanel() {
         return panel1;
     }
 

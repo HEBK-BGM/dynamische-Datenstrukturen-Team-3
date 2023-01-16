@@ -43,7 +43,7 @@ public class Joker{
      * Gibt das Panel zurück
      * @return Panel
      */
-    private JPanel getPanel() {
+    public JPanel getPanel() {
         return panel1;
     }
 
