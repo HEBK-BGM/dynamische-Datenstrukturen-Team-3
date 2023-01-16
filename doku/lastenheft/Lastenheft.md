@@ -103,3 +103,9 @@ Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am
 *Hier wird ein Sequenzdiagramm zu einer Funktion aus 3.1 dargestellt.*
 
 ![Sequenzdiagramm](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm.puml)
+
+### OneNote
+
+https://bkwischustde-my.sharepoint.com/:o:/g/personal/maarten_fraune_hebk_de/Eh0KF5O6JcRKq5bopgYfwdgBXXMZdXjavjosg-x9gRKN8Q?e=zRx8co 
+
+
