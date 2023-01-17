@@ -79,13 +79,13 @@ Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am
 
 ### 3.2 Nicht-funktionale Anforderungen
 
-| Kürzel | Funktionsname         | Funktionsbeschreibung                                                              |
-|--------|-----------------------|------------------------------------------------------------------------------------|
-| NF1    | Lock and feel         | Der Text "hello world" wird ausgegeben.                                            |
-| NF2    | Lock and feel         | Die Ausgabe der Texte soll unmittelbar erfolgen.                                   |
-| NF3    | Internationalisierung | Es ist langfristig vorgesehen, die Texte in verschiedenen Übersetzungen anzuzeigen |
-| NF4    | Sicherheit            | Diesbezüglich liegen keine Anforderungen vor.                                      |
-| NF5    | Normen                | EDie Anwendung braucht keine besonderen Normen zu erfüllen.                        |
+| Kürzel | Funktionsname         | Funktionsbeschreibung                                                            |
+|--------|-----------------------|----------------------------------------------------------------------------------|
+| NF1    | Lock and feel         | Die GUI wird gestartet.                                                          |
+| NF2    | Lock and feel         | Die Weiterführung nach Anklicken eines Buttons soll unmittelbar erfolgen.        |
+| NF3    | Internationalisierung | Es ist langfristig vorgesehen, das Spiel "Wer wird Millionär" spielen zu können. |
+| NF4    | Sicherheit            | Das Programm muss vor Abstürzen sicher sein.                                     |
+| NF5    | Normen                | Das Spiel muss ausführbar sein und Spaß machen.                                  |
 
 ## 4 Entwürfe
 
@@ -102,10 +102,6 @@ Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am
 ### 4.3 Sequenzdiagramm
 *Hier wird ein Sequenzdiagramm zu einer Funktion aus 3.1 dargestellt.*
 
-![Sequenzdiagramm](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm.puml)
-
-### OneNote
-
-https://bkwischustde-my.sharepoint.com/:o:/g/personal/maarten_fraune_hebk_de/Eh0KF5O6JcRKq5bopgYfwdgBXXMZdXjavjosg-x9gRKN8Q?e=zRx8co 
-
-
+![Sequenzdiagramm List](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-List.puml)
+![Sequenzdiagramm Stack](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Stack.puml)
+![Sequenzdiagramm Queue](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Queue.puml)

@@ -10,6 +10,7 @@ import java.awt.event.ActionListener;
 
 public class Help extends JFrame{
     private StartGUI frame;
+    private JTextField spielanleitung;
     private JPanel panel1;
     private JTextArea textArea1;
 
@@ -24,7 +25,11 @@ public class Help extends JFrame{
         this.setVisible(true);
     }
 
-    public JPanel Panel(){
+    /**
+     * Gibt das Panel zurück
+     * @return Panel
+     */
+    public JPanel getPanel(){
         return panel1;
     }
 }

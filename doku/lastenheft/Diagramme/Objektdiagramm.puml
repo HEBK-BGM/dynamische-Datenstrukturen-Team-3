@@ -1,6 +1,6 @@
 @startuml
 'https://plantuml.com/object-diagram
-
+/'
 object London
 object Washington
 object Berlin
@@ -13,4 +13,34 @@ map CapitalCity {
 }
 
 NewYork --> CapitalCity::USA
+'/
+'Wird im CSVReader erstellt
+object list {
+- first = id
+- aktuelleNode = array[6]
+}
+
+'Wird im CSVReader erstellt
+object stack {
+- first = id
+}
+
+'Wird im CSVReader erstellt
+object queue {
+- first = id
+}
+
+'Wird im Menu erstellt
+object csv {
+- path = "src/main/java/de/hebk/menu/CSVReader/Questions.csv"
+}
+
+'Wird im Menu erstellt
+object guiStart {
+- name = "Wer wird Millionaer"
+}
+
+csv o-- list
+csv o-- stack
+csv o-- queue
 @enduml

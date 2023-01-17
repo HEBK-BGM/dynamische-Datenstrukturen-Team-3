@@ -14,7 +14,7 @@ public class CSVReader {
     /**
      * Attribute
      */
-    String path = "src/main/java/de/hebk/menu/CSVReader/Questions.csv";
+     private String path = "src/main/java/de/hebk/menu/CSVReader/Questions.csv";
 
     /**
      * Diese Methode liest die CSV-Datei mit den Fragen, indem sie jede Zeile der Datei durchgeht und einer Liste hinzufügt.
