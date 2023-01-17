@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Queue.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Stack.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-List.puml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/doku/lastenheft/Lastenheft.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/lastenheft/Lastenheft.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +125,7 @@
       <workItem from="1673606541858" duration="47000" />
       <workItem from="1673852806948" duration="4509000" />
       <workItem from="1673862253438" duration="465000" />
-      <workItem from="1673969980235" duration="2319000" />
+      <workItem from="1673969980235" duration="2856000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -256,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673971280370</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="[ADD] Sequenzdiagramme">
+      <created>1673972337524</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1673972337524</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +294,8 @@
     <MESSAGE value="[ADD] J-Doc Kommentare" />
     <MESSAGE value="[CHA] Update Klassendiagramm" />
     <MESSAGE value="[ADD] Objektdiagramm" />
-    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Objektdiagramm" />
+    <MESSAGE value="[ADD] Sequenzdiagramme" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Sequenzdiagramme" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

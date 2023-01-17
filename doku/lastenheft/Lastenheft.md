@@ -79,13 +79,13 @@ Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am
 
 ### 3.2 Nicht-funktionale Anforderungen
 
-| Kürzel | Funktionsname         | Funktionsbeschreibung                                                              |
-|--------|-----------------------|------------------------------------------------------------------------------------|
-| NF1    | Lock and feel         | Der Text "hello world" wird ausgegeben.                                            |
-| NF2    | Lock and feel         | Die Ausgabe der Texte soll unmittelbar erfolgen.                                   |
-| NF3    | Internationalisierung | Es ist langfristig vorgesehen, die Texte in verschiedenen Übersetzungen anzuzeigen |
-| NF4    | Sicherheit            | Diesbezüglich liegen keine Anforderungen vor.                                      |
-| NF5    | Normen                | EDie Anwendung braucht keine besonderen Normen zu erfüllen.                        |
+| Kürzel | Funktionsname         | Funktionsbeschreibung                                                            |
+|--------|-----------------------|----------------------------------------------------------------------------------|
+| NF1    | Lock and feel         | Die GUI wird gestartet.                                                          |
+| NF2    | Lock and feel         | Die Weiterführung nach Anklicken eines Buttons soll unmittelbar erfolgen.        |
+| NF3    | Internationalisierung | Es ist langfristig vorgesehen, das Spiel "Wer wird Millionär" spielen zu können. |
+| NF4    | Sicherheit            | Das Programm muss vor Abstürzen sicher sein.                                     |
+| NF5    | Normen                | Das Spiel muss ausführbar sein und Spaß machen.                                  |
 
 ## 4 Entwürfe
 
