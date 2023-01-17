@@ -3,6 +3,7 @@ package de.hebk.menu.GUI;
 import de.hebk.menu.GUI.Fragenlayout;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -27,6 +28,8 @@ public class Joker{
     public Joker(StartGUI gui, int i) {
         this.frame = gui;
         frame.add(panel1);
+        Font schriftart2 = new Font("Papyrus", Font.BOLD + Font.ITALIC, 12);
+        welchenJokerMoechtestDuTextArea.setFont(schriftart2);
         frame.setVisible(true);
 
         zurueckButton.addActionListener(new ActionListener(){
