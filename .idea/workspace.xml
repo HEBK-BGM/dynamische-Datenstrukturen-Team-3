@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="409f656e-b6de-44ad-bf8f-bfd1307540be" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Objektdiagramm.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Objektdiagramm.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Queue.puml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Stack.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm.puml" beforeDir="false" afterPath="$PROJECT_DIR$/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-List.puml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doku/lastenheft/Lastenheft.md" beforeDir="false" afterPath="$PROJECT_DIR$/doku/lastenheft/Lastenheft.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +52,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/niklas.kamm/IdeaProjects/dynamische-Datenstrukturen-Team-3/doku/lastenheft/Diagramme",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\niklas.kamm\IdeaProjects\dynamische-Datenstrukturen-Team-3\doku\lastenheft\Diagramme" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Menu">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="de.hebk.Main" />
@@ -120,7 +128,7 @@
       <workItem from="1673606541858" duration="47000" />
       <workItem from="1673852806948" duration="4509000" />
       <workItem from="1673862253438" duration="465000" />
-      <workItem from="1673969980235" duration="1268000" />
+      <workItem from="1673969980235" duration="2319000" />
     </task>
     <task id="LOCAL-00001" summary="Init Project">
       <created>1667762862125</created>
@@ -241,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673856852254</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[ADD] Objektdiagramm">
+      <created>1673971280370</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1673971280370</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +289,8 @@
     <MESSAGE value="[FIX] Hab Anmeldung richtig gemacht und eine verknüpfung dazu auf dem Startbildschirm gemacht" />
     <MESSAGE value="[ADD] J-Doc Kommentare" />
     <MESSAGE value="[CHA] Update Klassendiagramm" />
-    <option name="LAST_COMMIT_MESSAGE" value="[CHA] Update Klassendiagramm" />
+    <MESSAGE value="[ADD] Objektdiagramm" />
+    <option name="LAST_COMMIT_MESSAGE" value="[ADD] Objektdiagramm" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

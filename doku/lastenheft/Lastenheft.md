@@ -102,4 +102,6 @@ Es gibt nur zwei Anforderungen: die Hauptfunktion und eine Hilfefunktion. Der am
 ### 4.3 Sequenzdiagramm
 *Hier wird ein Sequenzdiagramm zu einer Funktion aus 3.1 dargestellt.*
 
-![Sequenzdiagramm](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm.puml)
+![Sequenzdiagramm List](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-List.puml)
+![Sequenzdiagramm Stack](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Stack.puml)
+![Sequenzdiagramm Queue](https://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/HEBK-BGM/dynamische-Datenstrukturen-Team-3/master/doku/lastenheft/Diagramme/Sequenzdiagramm-CSVReader-Queue.puml)
